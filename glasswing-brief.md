@@ -93,12 +93,12 @@ The irony is instructive: the company building the most powerful vulnerability d
 
 ## Timeline
 
-| When | What happens |
-|------|-------------|
-| Now (April 2026) | Glasswing restricted to ~50 partner orgs. Vulnerability disclosures beginning. |
-| Next 6 months | Framework bodies (HITRUST, AICPA, ISO) begin discussing AI-augmented assessment standards |
-| 12-18 months | Mythos-class models broadly available with safeguards. AI-augmented vulnerability discovery becomes commercially accessible. |
-| 18-24 months | "Do you use AI-augmented vulnerability scanning?" becomes a standard assessment question |
+| When | What's happening | Source |
+|------|-----------------|--------|
+| Now (April 2026) | Glasswing restricted to ~50 partner orgs. Vulnerability disclosures beginning. | [Anthropic](https://www.anthropic.com/glasswing) |
+| Already underway | HITRUST launched an [AI Security Assessment](https://hitrustalliance.net/assessments-and-certifications/aisecurityassessment) (late 2024) — 51 controls mapped to ISO 23894 and NIST AI RMF. Schellman published a [mapping from HITRUST AI to ISO 42001](https://www.schellman.com/blog/ai-services/hitrust-ai-security-assessment-path-to-iso-42001). The frameworks are already moving. | HITRUST, Schellman |
+| 12-18 months | AI-powered vulnerability discovery at Glasswing's level becomes broadly accessible. "The capability gap between Project Glasswing participants and the rest of the market is temporary, likely 12 to 18 months." Anthropic plans to ship safeguards on an upcoming Opus model first, then enable Mythos-class deployment at scale. | [Innovaiden](https://www.innovaiden.com/insights/project-glasswing-cybersecurity-assessment-baseline), [Axios](https://www.axios.com/2026/04/07/anthropic-mythos-preview-cybersecurity-risks) |
+| By 2028 | Gartner predicts AI will drive 50% of cybersecurity incident response. Separately, Gartner forecasts 40% of enterprise apps will feature task-specific AI agents by 2026. As AI-augmented discovery becomes commercially available and framework bodies continue adding AI-specific controls, "do you use AI-augmented vulnerability scanning?" becomes a natural assessment question. | [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-03-17-gartner-predicts-ai-applications-will-drive-50-percent-of-cybersecurity-incident-response-efforts-by-2028), [Bessemer](https://www.bvp.com/atlas/securing-ai-agents-the-defining-cybersecurity-challenge-of-2026) |
 
 ---
 
@@ -109,6 +109,9 @@ The irony is instructive: the company building the most powerful vulnerability d
 - [CrowdStrike on Mythos Preview](https://www.crowdstrike.com/en-us/blog/crowdstrike-founding-member-anthropic-mythos-frontier-model-to-secure-ai/)
 - [CyberScoop — Open Source Vulnerability Implications](https://cyberscoop.com/project-glasswing-anthropic-ai-open-source-software-vulnerabilities/)
 - [Fortune — Anthropic Claude Mythos](https://fortune.com/2026/04/07/anthropic-claude-mythos-model-project-glasswing-cybersecurity/)
+- [HITRUST AI Security Assessment](https://hitrustalliance.net/assessments-and-certifications/aisecurityassessment)
+- [Schellman — HITRUST AI to ISO 42001 mapping](https://www.schellman.com/blog/ai-services/hitrust-ai-security-assessment-path-to-iso-42001)
+- [Simon Willison — Glasswing analysis](https://simonwillison.net/2026/Apr/7/project-glasswing/)
 
 ---
 
