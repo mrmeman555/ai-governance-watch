@@ -1,0 +1,115 @@
+# What Project Glasswing Means for Your Assessment Practice
+
+> **For:** Justin Graham, Steadfast Partners
+> **From:** Aaron Reveley
+> **Date:** April 8, 2026
+> **Format:** Practitioner brief — not a news summary. Focused on what changes for SOC 2, HITRUST, HIPAA, and vCISO advisory.
+
+---
+
+## The Event
+
+On April 7, 2026, Anthropic launched Project Glasswing — a restricted initiative giving ~50 organizations access to Claude Mythos Preview, a frontier AI model that has already found thousands of high-severity zero-day vulnerabilities across every major operating system and web browser.
+
+**Partners:** AWS, Apple, Google, Microsoft, Cisco, CrowdStrike, Palo Alto Networks, JPMorganChase, NVIDIA, Broadcom, Linux Foundation.
+
+**Funding:** $100M in model usage credits + $4M in direct donations to open-source security organizations (Alpha-Omega, OpenSSF, Apache Software Foundation).
+
+**Key findings so far:**
+- 27-year-old vulnerability in OpenBSD (crash any server with two packets)
+- 16-year-old vulnerability in FFmpeg that automated testing tools executed 5 million times without catching
+- Thousands of previously unknown high-severity flaws across foundational software
+
+**Access:** Restricted. Not publicly available. Anthropic estimates Mythos-class models will be broadly deployable in 12-18 months once safeguards are built.
+
+---
+
+## Why This Matters for GRC Consulting
+
+### 1. The "Reasonable Security" Baseline Just Moved
+
+Every framework you work with — SOC 2, HIPAA, HITRUST, ISO 27001, CMMC — requires organizations to implement "reasonable" or "proportionate" security measures. That standard is benchmarked against prevailing industry practices.
+
+**The problem:** When an AI model can find vulnerabilities that survived 27 years of expert human review and 5 million automated test executions, the definition of what constitutes adequate vulnerability management has shifted. Assessments completed before April 2026 are benchmarked against a demonstrably lower standard.
+
+**What this means in practice:**
+- Vulnerability management controls scoped against CVE databases alone now have a known blind spot — zero-days that AI can find but scanners cannot
+- "We run regular vulnerability scans" is no longer sufficient as a control narrative if the scans only check known CVEs
+- The gap between "we scan for known vulnerabilities" and "we discover unknown vulnerabilities" is now a documentable risk
+
+**The question clients will start asking:** "Should our vulnerability management program account for AI-augmented discovery?" The answer is going to be yes within 18 months. Firms that help clients prepare now are ahead.
+
+### 2. HITRUST Assessment Scope
+
+HITRUST rolls HIPAA + SOC 2 + NIST into one unified assessment. If the vulnerability management controls underlying those frameworks need to account for AI-augmented discovery capability, the HITRUST assessment scope expands:
+
+- **Control 07.d (Technical Vulnerability Management)** — currently satisfied by regular scanning and patching. Post-Glasswing, assessors may need to ask whether the organization has evaluated AI-augmented discovery tools or documented a risk acceptance for not using them.
+- **Control 01.v (Information Access Restriction)** — zero-day exposure in foundational software (OS, browsers, media libraries) affects the risk calculus for access controls built on top of that software.
+
+This isn't a requirement today. But HITRUST updates its control framework regularly, and the next revision will almost certainly reference AI-augmented vulnerability management. Assessors who understand this shift before the framework catches up can advise clients proactively.
+
+### 3. HIPAA Risk Analysis
+
+HIPAA's Security Rule (§164.308(a)(1)) requires covered entities to "conduct an accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic protected health information."
+
+**The shift:** If AI can find zero-day vulnerabilities in the software that stores and transmits ePHI — and those vulnerabilities have existed for decades undetected — then a HIPAA risk analysis that doesn't account for this class of risk is arguably incomplete.
+
+**Healthcare-specific concern:** Healthcare organizations are the #1 target for ransomware. The software they depend on (OS kernels, browsers, media processing libraries like FFmpeg) is exactly where Mythos found its most critical vulnerabilities. A dental clinic running unpatched FFmpeg for imaging software now has a named, documented risk that didn't exist in any database last week.
+
+**For Steadfast's healthcare clients:** This is a conversation to have during the next risk assessment cycle. Not as a scare tactic — as a genuine update to the threat landscape that their risk analysis should reflect.
+
+### 4. SOC 2 Trust Services Criteria
+
+**CC7.1 (Detection of Changes)** — Monitoring and detection controls need to account for the fact that foundational software may contain undiscovered vulnerabilities that traditional tools cannot find. This doesn't invalidate existing controls, but it does mean the residual risk statement should acknowledge the limitation.
+
+**CC3.2 (Risk Assessment)** — Risk assessments should now consider: "What is our exposure to zero-day vulnerabilities in foundational software, and what is our detection capability for vulnerabilities that don't appear in known databases?"
+
+**Practical impact for SOC 2 engagements:** When writing control narratives for vulnerability management, the DE/OE assessment should note whether the organization's detection capabilities extend beyond known-CVE scanning. This becomes a finding if the risk isn't acknowledged.
+
+### 5. vCISO Advisory — The Client Conversation
+
+For Steadfast's vCISO engagements, this is a proactive advisory opportunity:
+
+**The 90-day conversation:**
+- "Here's what happened with Glasswing. Here's what it means for your vulnerability management program."
+- "Your current scans check known CVEs. This new class of AI tool finds things that aren't in any database. You don't need to adopt it today, but you need to document the risk and plan for it."
+- "Within 18 months, AI-augmented vulnerability discovery will be commercially available. Let's build your adoption roadmap now so you're not scrambling."
+
+**The service line opportunity:**
+- AI-augmented assessment methodology development
+- Policy updates to account for AI-assisted vulnerability management
+- Client readiness assessments for when Mythos-class tools become available
+- Gap analysis: current vulnerability management vs. AI-augmented baseline
+
+---
+
+## The Supply Chain Angle
+
+Worth noting: the event that made Glasswing publicly visible happened because of a supply chain failure at Anthropic itself. On March 31, a misconfigured npm package exposed the full source architecture of Claude Code — an AI agent harness used by hundreds of thousands of developers. A missing line in a config file. That's the kind of operational security gap that SOC 2 and ISO 27001 controls are supposed to prevent.
+
+The irony is instructive: the company building the most powerful vulnerability detection AI in history was itself vulnerable to a packaging misconfiguration. That's the story you tell clients when they ask "does this really matter for us?"
+
+---
+
+## Timeline
+
+| When | What happens |
+|------|-------------|
+| Now (April 2026) | Glasswing restricted to ~50 partner orgs. Vulnerability disclosures beginning. |
+| Next 6 months | Framework bodies (HITRUST, AICPA, ISO) begin discussing AI-augmented assessment standards |
+| 12-18 months | Mythos-class models broadly available with safeguards. AI-augmented vulnerability discovery becomes commercially accessible. |
+| 18-24 months | "Do you use AI-augmented vulnerability scanning?" becomes a standard assessment question |
+
+---
+
+## Sources
+
+- [Project Glasswing — Anthropic](https://www.anthropic.com/glasswing)
+- [Project Glasswing and the New Baseline for Cybersecurity Assessment — Innovaiden](https://www.innovaiden.com/insights/project-glasswing-cybersecurity-assessment-baseline)
+- [CrowdStrike on Mythos Preview](https://www.crowdstrike.com/en-us/blog/crowdstrike-founding-member-anthropic-mythos-frontier-model-to-secure-ai/)
+- [CyberScoop — Open Source Vulnerability Implications](https://cyberscoop.com/project-glasswing-anthropic-ai-open-source-software-vulnerabilities/)
+- [Fortune — Anthropic Claude Mythos](https://fortune.com/2026/04/07/anthropic-claude-mythos-model-project-glasswing-cybersecurity/)
+
+---
+
+
