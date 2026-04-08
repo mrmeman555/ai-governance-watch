@@ -8,7 +8,9 @@ A collection of reference material on agent harnesses, AI governance gaps, and r
 
 **March 31 — Claude Code source leak.** A misconfigured npm package exposed 513,000 lines of Anthropic's agent harness source code. Not a breach — a supply chain packaging failure. One missing config line. The leaked architecture revealed the full orchestration layer: ~40 tools, dynamic permission gates, memory consolidation, subagent orchestration, and a hook system for injecting custom governance. DMCA takedowns are in progress, but the architecture is now public knowledge.
 
-**April 1 — OpenClaw hits 247K GitHub stars.** The first popular open-source agent harness proved the harness — not the model — is the product. You can swap in Claude, GPT, Gemini, or a local model. The model is interchangeable. The harness is what gives it agency. When Claude Code's source leaked the same week, people could compare the proprietary harness to the open-source one side by side. Same architecture.
+**Late January — OpenClaw becomes the fastest-growing GitHub repo in history.** 100K stars in 2 days. 210K stars in 10 days. 250K stars in 60 days — surpassing React's 10-year record. Peak growth: 710 stars/hour. The first popular open-source agent harness proved the harness — not the model — is the product. Swap in Claude, GPT, Gemini, or a local model. The model is interchangeable. The harness is what gives it agency.
+
+**March 31 — Claw Code hits 50K stars in 2 hours.** After the Claude Code leak, Sigrid Jin published a clean-room rewrite of the harness architecture in Rust and Python — no proprietary code, independently audited. 48K+ stars. One of the fastest accumulation rates GitHub has ever recorded. It proved the architecture is reproducible: same tool system, same permission gates, same orchestration patterns.
 
 **April 1 — Claude Managed Agents enters beta.** Anthropic began selling the harness itself as a managed service — containerized execution, built-in tools, persistent sessions, network access controls. Multi-agent orchestration and persistent memory are in research preview. [Docs](https://platform.claude.com/docs/en/managed-agents/overview)
 
