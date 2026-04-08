@@ -28,3 +28,7 @@ Anthropic launched Project Glasswing on April 7, 2026 with AWS, Apple, Google, M
 ---
 
 *April 2026 — Aaron Reveley*
+
+---
+
+> *Research and analysis by Aaron Reveley. Writing assisted by Claude (Anthropic).*
