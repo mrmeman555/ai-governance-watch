@@ -34,6 +34,7 @@ Living documents that accumulate findings per compliance framework.
 
 ### Controls
 - [Harness Risk & Control Matrix (SOC 2 Mapping)](controls/harness-risk-matrix.md)
+- [Repository Governance Controls](controls/repo-governance.md) — how this repo governs its own content: sourcing, review, corrections, bias
 
 ---
 
