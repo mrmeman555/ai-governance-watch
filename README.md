@@ -1,5 +1,7 @@
 # AI Governance Watch
 
+> **This is independent research, not compliance advice.** The analysis here reflects one practitioner's interpretation of how recent AI developments intersect with governance frameworks (SOC 2, HIPAA, HITRUST, ISO 42001, NIST AI RMF). It is not endorsed by the AICPA, NIST, ISO, HITRUST Alliance, or HHS. Framework gap claims are the author's assessment — not audit findings. Do not use this as a substitute for qualified legal, compliance, or security counsel. Content was written with AI assistance (Claude, Anthropic) and may contain errors. Events are moving fast; verify claims against primary sources before acting on them. See [SOURCES.md](SOURCES.md) for the full bibliography and [repo-governance.md](controls/repo-governance.md) for how this repo governs its own content.
+
 Ongoing research tracking how AI agent developments affect cybersecurity governance frameworks. Focused on the agent harness ecosystem, Project Glasswing, and what both mean for SOC 2, HITRUST, HIPAA, ISO 42001, and NIST AI RMF.
 
 ---
