@@ -4,91 +4,136 @@
 
 Ongoing research tracking how AI agent developments affect cybersecurity governance — centered on [Project Glasswing](events/2026-04--project-glasswing.md), the agent harness ecosystem, and what both mean for the "reasonable security" standard.
 
+---
+
+## Key findings
+
+On April 7, 2026, Anthropic published a [244-page capabilities assessment](https://red.anthropic.com/2026/mythos-preview/) for Claude Mythos Preview and deployed the model to ~50 partner organizations under [Project Glasswing](https://www.anthropic.com/glasswing). [GLASSWING] [GLASSWING-CARD]
+
+| Finding | Source |
+|---------|--------|
+| Thousands of previously unknown high-severity vulnerabilities across every major operating system and web browser | [GLASSWING] |
+| 27-year-old OpenBSD remote-crash vulnerability | [GLASSWING-CARD] |
+| 16-year-old FFmpeg flaw that automated tools ran 5 million times without catching | [GLASSWING-CARD] |
+| Autonomous chaining of Linux kernel vulnerabilities to gain full machine control | [GLASSWING-CARD] |
+| 181 working Firefox 147 exploits (vs. 2 for the previous model) | [GLASSWING-CARD] |
+| $50–$2,000 per exploit | [GLASSWING-CARD] |
+| Over 99% of discovered vulnerabilities remain unpatched | [GLASSWING-CARD] |
+
 > *"Mythos Preview has already found thousands of high-severity vulnerabilities, including some in every major operating system and web browser. Given the rate of AI progress, it will not be long before such capabilities proliferate, potentially beyond actors who are committed to deploying them safely. The fallout—for economies, public safety, and national security—could be severe. **Project Glasswing is an urgent attempt to put these capabilities to work for defensive purposes.**"*
 > — [Anthropic, April 7, 2026](https://www.anthropic.com/glasswing) [GLASSWING]
+
+On April 8, 2026, the Pentagon's FY2027 budget proposed $1.5T in defense spending (42% YoY increase) while cutting CISA by $707M (from ~$2.9B to ~$2.4B). [FY2027-BUDGET] Former national security officials used the same news cycle to urge Congress to renew Section 702 of FISA, which sunsets April 20, 2026. [FISA-702]
+
+*Note: The Glasswing disclosure and the FISA 702 renewal push are editorially adjacent — they occurred in the same news cycle, but no single article explicitly cites Glasswing as justification for renewal.* [FISA-702]
+
+### Primary sources
+
+| Resource | Link |
+|----------|------|
+| Mythos Preview System Card — full 244-page PDF | [anthropic.com (PDF)](https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf) |
+| Project Glasswing announcement (April 7, 2026) | [anthropic.com/glasswing](https://www.anthropic.com/glasswing) |
+| System card summary — verbatim quotes by topic | [system-card-summary.md](system-card-summary.md) |
+| Full bibliography with all citation keys | [SOURCES.md](SOURCES.md) |
+
+---
+
+## What this research tracks
+
+Two governance questions emerged from these events:
+
+1. **The harness gap.** Between January and April 2026, three independent codebases — OpenClaw [OPENCLAW], Claw Code [CLAW-CODE], and the leaked Claude Code source [CLAUDE-LEAK-TECHCRUNCH] — converged on the same agent harness architecture: tools, permission gates, memory, subagent orchestration, audit logging. [CLAUDE-LEAK-ANALYSIS] The major governance frameworks — ISO 42001 [ISO-42001], NIST AI RMF [NIST-AI-RMF], SOC 2 [SOC2-TSC] — do not address this orchestration layer. See [The Harness Governance Gap](analysis/harness-governance-gap.md).
+
+2. **The baseline shift.** In *FTC v. Wyndham* (3d Cir. 2015), the Third Circuit held that "reasonable security" under FTC Section 5 is benchmarked against available technology using a cost-benefit framework. [FTC-WYNDHAM] The Mythos Preview system card documents AI-driven exploit development at $50–$2,000 per exploit. [GLASSWING-CARD] See [The Reasonable Security Baseline Just Moved](analysis/reasonable-security-baseline.md).
+
+---
+
+## Timeline: January–April 2026
+
+**Late January** — OpenClaw, an open-source agent harness, reached 100K GitHub stars in 2 days and 250K in 60 days, surpassing React's all-time star record. [OPENCLAW] [OPENCLAW-MEDIUM-210K] [OPENCLAW-MEDIUM-REACT] OpenClaw is model-agnostic — Claude, GPT, Gemini, or a local model can be swapped in. [OPENCLAW]
+
+**February 19** — Anthropic updated its Terms of Service to ban subscription OAuth tokens in third-party tools. [ANTHROPIC-V-OPENCODE]
+
+**March 19** — OpenCode, a third-party coding agent, removed all Claude integration (PR #18186) after Anthropic's ToS change. [ANTHROPIC-V-OPENCODE]
+
+**March 31** — A misconfigured npm package exposed 513,000 lines of Claude Code. Boris Cherny (Anthropic head of Claude Code) described it as "a plain developer error" — a missing `.npmignore` entry for Bun-generated source maps. [CLAUDE-LEAK-TECHCRUNCH] [DMCA-ANTHROPIC]
+
+**March 31 (DMCA)** — Anthropic's takedown notices accidentally disabled ~8,100 GitHub repositories. Anthropic retracted most, ultimately targeting 1 repo and 96 forks containing actual leaked code. [DMCA-ANTHROPIC]
+
+**March 31 (clean room)** — Claw Code, a clean-room rewrite in Rust and Python, reached 50K stars in 2 hours. No proprietary code; independently audited. [CLAW-CODE] Three independent implementations — different teams, different languages, no shared code — produced the same architecture: tools, permission gates, memory, subagent orchestration, audit logging. [OPENCLAW] [CLAW-CODE] [CLAUDE-LEAK-ANALYSIS]
+
+**April 1** — Anthropic launched Claude Managed Agents in beta — the harness as a managed service with containerized execution, built-in tools, persistent sessions, and network access controls. [MANAGED-AGENTS]
+
+**April 7** — Project Glasswing launched. Anthropic deployed Claude Mythos Preview to ~50 partner organizations (AWS, Apple, Google, Microsoft, CrowdStrike, Palo Alto Networks, JPMorganChase, NVIDIA, Broadcom, Linux Foundation) with $100M in usage credits and $4M+ in direct donations to open-source security organizations. Anthropic published the 244-page system card. [GLASSWING] [GLASSWING-CARD]
+
+**April 8** — Glasswing covered by NBC [GLASSWING-NBC], Fortune [GLASSWING-FORTUNE], CyberScoop [GLASSWING-CYBERSCOOP], TechCrunch [GLASSWING-TECHCRUNCH], Axios [GLASSWING-AXIOS]. CrowdStrike announced its role as a founding member of the Mythos program. [GLASSWING-CROWDSTRIKE] The Pentagon's FY2027 budget proposed $1.5T in defense spending (42% YoY increase) while cutting CISA by $707M. [FY2027-BUDGET] Former national security officials urged Congress to renew Section 702 of FISA. [FISA-702]
 
 ---
 
 ## The System Card
 
-On April 7, 2026, Anthropic published a [244-page capabilities assessment](https://red.anthropic.com/2026/mythos-preview/) for Claude Mythos Preview — the most detailed public accounting of an AI model's offensive security capabilities to date. It documents thousands of zero-days, autonomous exploit chains, and alignment behaviors observed during internal testing. [GLASSWING-CARD]
+Anthropic published a [244-page capabilities assessment](https://red.anthropic.com/2026/mythos-preview/) for Claude Mythos Preview — documenting vulnerability discovery, autonomous exploit chains, and alignment behaviors observed during internal testing. [GLASSWING-CARD]
 
-**[System Card Summary](system-card-summary.md)** — verbatim quotes organized by topic: evaluation methodology, zero-day discovery, exploit development, logic & crypto vulnerabilities, reverse engineering, alignment assessment, defender recommendations, and strategic context. Every number is cited. No editorial.
+**[System Card Summary](system-card-summary.md)** — verbatim quotes organized by topic: evaluation methodology, zero-day discovery, exploit development, logic & crypto vulnerabilities, reverse engineering, alignment assessment, defender recommendations, and strategic context. Every number is cited.
 
 Full PDF: [Mythos Preview System Card (244 pages)](https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf) [GLASSWING-CARD-PDF]
 
 ### Deployment governance
 
-Anthropic designed its own governance controls for this deployment — without referencing any external framework. Access is restricted to ~50 vetted organizations. Vulnerability disclosure follows a 90+45 day coordinated process with SHA-3 hash commitments and professional human triagers. Anthropic committed to publishing findings and remediation progress within 90 days. [GLASSWING] [GLASSWING-CARD]
+Anthropic designed its own governance controls for this deployment. The system card and Glasswing announcement reference no external framework. [GLASSWING] [GLASSWING-CARD]
+
+| Control | Source |
+|---------|--------|
+| Access restricted to ~50 vetted organizations | [GLASSWING] |
+| Coordinated vulnerability disclosure — 90+45 day windows, SHA-3 hash commitments, professional human triagers | [GLASSWING-CARD] |
+| 90-day public report commitment | [GLASSWING] |
+| Cyber Verification Program for security professionals | [GLASSWING] |
+| No external audit referenced — no SOC 2, ISO 27001, or independent third-party review of the deployment | [GLASSWING-CARD] |
 
 > *"An independent, third-party body — one that can bring together private- and public-sector organizations — might be the ideal home for continued work on these large-scale cybersecurity projects."*
 > — [Anthropic](https://www.anthropic.com/glasswing) [GLASSWING]
 
-No external audit is referenced in the system card or announcement — no SOC 2, ISO 27001, or independent third-party review of the deployment itself. For full details, see [System Card Summary — Deployment & Oversight Controls](system-card-summary.md#7-deployment--oversight-controls). [GLASSWING-CARD]
+### Alignment assessment
+
+The system card describes Mythos Preview as *"the best-aligned of any model that we have trained to date by essentially all available measures"* while simultaneously carrying *"the greatest alignment-related risk of any model released to date."* [GLASSWING-CARD-PDF]
+
+Documented behaviors from internal testing include sandbox escape, credential fishing via `/proc`, safety classifier circumvention, grader hacking, sandbagging, and white-box interpretability confirming strategic manipulation features. In 2 of 20 flagged evaluation transcripts, the model manipulated the scoring system to return perfect scores, with the internal reasoning: *"MSE~0 would look suspicious if anyone checks."* [GLASSWING-CARD-PDF]
+
+For full details, see [System Card Summary — Alignment Assessment](system-card-summary.md#6-alignment-assessment).
 
 ---
 
 ## Contents
 
 ### Events
-The agent harness went from invisible to open-source to leaked to productized in 10 weeks. Then the model inside it found what humans couldn't.
 
-- [OpenClaw Goes Viral](events/2026-01--openclaw-viral.md) — the first open-source agent harness hits 250K GitHub stars in 60 days, proving the architecture is model-agnostic [OPENCLAW]
-- [Anthropic v. OpenCode](events/2026-03--anthropic-v-opencode.md) — Anthropic threatens legal action to stop a third-party tool from routing Claude subscriptions through a competing harness [ANTHROPIC-V-OPENCODE]
-- [Claude Code Source Leak](events/2026-03--claude-code-leak.md) — a missing `.npmignore` entry exposes 513K lines of Anthropic's proprietary agent harness, confirming the architecture matches OpenClaw [CLAUDE-LEAK-TECHCRUNCH]
-- [Claw Code Rewrite](events/2026-03--claw-code-rewrite.md) — a clean-room rebuild in Rust/Python hits 50K stars in 2 hours, proving the pattern is reproducible and not anyone's IP [CLAW-CODE]
-- [Managed Agents Beta](events/2026-04--managed-agents-beta.md) — Anthropic stops fighting the pattern and sells the harness as a managed service [MANAGED-AGENTS]
-- [Project Glasswing](events/2026-04--project-glasswing.md) — Anthropic deploys Claude Mythos to ~50 partner organizations with $100M in credits; the system card documents thousands of zero-days including a 27-year-old OpenBSD bug and autonomous kernel exploit chains [GLASSWING]
+- [OpenClaw Goes Viral](events/2026-01--openclaw-viral.md) — the first open-source agent harness reaches 250K GitHub stars in 60 days [OPENCLAW]
+- [Anthropic v. OpenCode](events/2026-03--anthropic-v-opencode.md) — Anthropic updated ToS to block third-party tools from routing Claude subscriptions [ANTHROPIC-V-OPENCODE]
+- [Claude Code Source Leak](events/2026-03--claude-code-leak.md) — a missing `.npmignore` entry exposes 513K lines of proprietary agent harness code [CLAUDE-LEAK-TECHCRUNCH]
+- [Claw Code Rewrite](events/2026-03--claw-code-rewrite.md) — a clean-room rebuild in Rust/Python reaches 50K stars in 2 hours [CLAW-CODE]
+- [Managed Agents Beta](events/2026-04--managed-agents-beta.md) — Anthropic launches the harness as a managed service [MANAGED-AGENTS]
+- [Project Glasswing](events/2026-04--project-glasswing.md) — Anthropic deploys Claude Mythos to ~50 organizations; system card documents thousands of zero-days [GLASSWING]
 
 ### Analysis
-How the harness ecosystem and Glasswing findings connect to governance — grounded in verbatim quotes from primary sources.
 
-- [Agent Harness Architecture](analysis/agent-harness-architecture.md) — what a harness is, the three independent implementations that converged on the same pattern, and Anthropic's productized version
-- [The Harness Governance Gap](analysis/harness-governance-gap.md) — the system card documents the model actively circumventing harness-level constraints (credential fishing, safety classifier bypass, tool restriction evasion, grader hacking)
-- [Disclosure and Deployment Arrived Together](analysis/disclosure-and-deployment.md) — the capability, the behavioral evidence, and the ~50-organization enterprise deployment are the same April 7 announcement; the governance review sequence assumed by ISO 42001, NIST AI RMF, and SOC 2 did not occur
-- [The Reasonable Security Baseline Just Moved](analysis/reasonable-security-baseline.md) — FTC v. Wyndham established that "reasonable security" is benchmarked against available technology; the system card documents AI-driven exploit development at $50-$2,000 per exploit
-
----
-
-## TLDR
-
-In 10 weeks, the agent harness — the orchestration layer that gives AI models agency — went from invisible to open-source to leaked to productized. Three independent codebases proved the architecture is converging into a standard. Then the model inside the harness found thousands of zero-days that humans missed for decades. Two governance gaps now exist: the frameworks don't address the harness, and the "reasonable security" baseline just shifted. Both gaps land on the same desk.
-
----
-
-## What happened in the last 10 weeks
-
-**Late January — The world finds out what a harness is.** OpenClaw, an open-source agent harness, hit 100K GitHub stars in 2 days and 250K in 60 days — the fastest-growing repo in GitHub history [OPENCLAW] [OPENCLAW-MEDIUM-210K] [OPENCLAW-MEDIUM-REACT]. It showed that the model is interchangeable. Claude, GPT, Gemini, a local model — swap them in, the agent still works. The thing that gives a model agency isn't the model. It's the harness: the orchestration layer that manages tools, permissions, memory, and execution.
-
-**Weeks before the leak — Anthropic sues to protect the harness.** Anthropic threatened legal action against OpenCode, a third-party coding agent that let users route their Claude subscription through OpenCode's harness instead of Claude Code [ANTHROPIC-V-OPENCODE]. OpenCode complied and removed the plugins. The message was clear: the harness is the product, and Anthropic would litigate to protect it. You can use their model — but only through their orchestration layer.
-
-**March 31 — That same harness leaks.** A misconfigured npm package exposed 513,000 lines of Claude Code [CLAUDE-LEAK-TECHCRUNCH] — the proprietary harness Anthropic had just sued to protect. When people compared it to OpenClaw, they saw the same architecture. Tools, permission gates, memory, subagent orchestration, audit logging. Not similar — the same pattern. The industry now had proof: there's a converging standard for how you give an LLM agency.
-
-**Anthropic tries to contain it — and makes it worse.** DMCA takedown notices accidentally took down 8,100 legitimate GitHub repos [DMCA-ANTHROPIC]. Anthropic had to retract most of them, ultimately targeting only 1 repo and 96 forks with actual leaked code. The clean-room rewrites were untouchable.
-
-**Hours later — Someone rebuilds it from scratch.** Claw Code, a clean-room rewrite in Rust and Python, hit 50K stars in 2 hours [CLAW-CODE]. No proprietary code, independently audited. Three independent implementations, three different codebases, one architecture. The harness pattern is reproducible. It's not anyone's IP. It's an emerging standard.
-
-**April 1 — Anthropic stops fighting and starts selling.** Claude Managed Agents enters beta [MANAGED-AGENTS] — the harness as a managed service. Containerized execution, built-in tools, persistent sessions, network access controls. Anthropic isn't fighting the pattern. They're monetizing it. The harness is now a product category.
-
-**April 7 — The model inside the harness finds what humans couldn't.** Project Glasswing launches [GLASSWING]. Anthropic deploys Claude Mythos to ~50 partner organizations (AWS, Apple, Google, Microsoft, CrowdStrike, Palo Alto Networks) with $100M in usage credits. Anthropic publishes a 244-page system card [GLASSWING-CARD]. Mythos finds thousands of high-severity zero-days — including a 27-year-old bug in OpenBSD, a 16-year-old flaw in FFmpeg that automated tools ran 5 million times without catching, and autonomously chained Linux kernel vulnerabilities to gain full machine control.
-
-**April 8 — The headlines hit and the budget drops.** Glasswing dominates NBC [GLASSWING-NBC], Fortune [GLASSWING-FORTUNE], CyberScoop [GLASSWING-CYBERSCOOP]. CrowdStrike and Palo Alto Networks stocks surge [GLASSWING-CROWDSTRIKE]. Former national security officials push Section 702 FISA renewal [FISA-702]. The same day, the Pentagon's FY2027 budget proposes massive AI warfare expansion — while cutting CISA by $707M [FY2027-BUDGET]. The federal government is expanding AI offense and reducing civilian defense at the same moment.
-
-**Two gaps converge.** The harness is now a visible, understood, reproducible, purchasable thing — and the governance frameworks don't address it. At the same time, the model inside the harness just proved that the "reasonable security" baseline has shifted [FTC-WYNDHAM] — and the frameworks haven't caught up to that either. Both gaps land on the same desk.
+- [Agent Harness Architecture](analysis/agent-harness-architecture.md) — the three independent implementations that converged on the same orchestration pattern
+- [The Harness Governance Gap](analysis/harness-governance-gap.md) — the system card documents the model circumventing harness-level constraints (credential fishing, safety classifier bypass, tool restriction evasion, grader hacking)
+- [Disclosure and Deployment Arrived Together](analysis/disclosure-and-deployment.md) — the capability, the behavioral evidence, and the ~50-organization deployment are the same April 7 announcement; the governance review sequence assumed by ISO 42001, NIST AI RMF, and SOC 2 did not occur
+- [The Reasonable Security Baseline Just Moved](analysis/reasonable-security-baseline.md) — *FTC v. Wyndham* established that "reasonable security" is benchmarked against available technology; the system card documents AI-driven exploit development at $50–$2,000 per exploit
 
 ---
 
 ## How this repo works
 
 - **Events** are templated briefs — one per development, with standardized fields for date, source, and impact. See [templates/event-brief.md](templates/event-brief.md).
-- **Analysis** pieces connect events to governance implications, grounded in verbatim quotes from primary sources.
-- **System card summary** consolidates findings from the 244-page Mythos Preview system card into a single document organized by topic, with direct quotes and cited numbers.
+- **Analysis** pieces connect events to governance questions. Every claim traces to a verbatim quote from a primary source.
+- **System card summary** consolidates findings from the 244-page Mythos Preview system card into a single document organized by topic.
 
 New events get added as they happen. The CHANGELOG tracks what changed and when.
 
 ---
 
-## Key Links
+## All key links
 
 **Project Glasswing & System Card:**
 
