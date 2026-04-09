@@ -81,6 +81,7 @@ New events get added as they happen. Framework docs get updated when an event af
 | Resource | Link |
 |----------|------|
 | Project Glasswing (Anthropic) | [anthropic.com/glasswing](https://www.anthropic.com/glasswing) |
+| Mythos Preview System Card | [red.anthropic.com](https://red.anthropic.com/2026/mythos-preview/) |
 | Claude Code leaked source (DMCA in progress) | [github.com/codeaashu/claude-code](https://github.com/codeaashu/claude-code) |
 | OpenClaw — first popular open-source harness | [github.com/openclaw/openclaw](https://github.com/openclaw/openclaw) |
 | Claw Code — clean-room Rust/Python rewrite | [github.com/ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) |

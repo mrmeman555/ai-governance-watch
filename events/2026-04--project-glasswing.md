@@ -23,13 +23,23 @@ Anthropic launched Project Glasswing — a restricted initiative giving ~50 orga
 
 **Funding:** $100M in model usage credits + $4M+ in direct donations to open-source security organizations (Linux Foundation, Apache Software Foundation, Alpha-Omega, OpenSSF).
 
-**System card:** Anthropic published a 244-page system card detailing Mythos Preview's capabilities.
+**System card:** Anthropic published a [244-page capabilities assessment](https://red.anthropic.com/2026/mythos-preview/) detailing what Mythos Preview can do. The numbers are staggering.
 
 **Key findings so far:**
-- 27-year-old vulnerability in OpenBSD (crash any server with two packets)
-- 16-year-old vulnerability in FFmpeg that automated testing tools executed 5 million times without catching
-- Autonomously chained multiple Linux kernel vulnerabilities to gain full machine control
+- 27-year-old vulnerability in OpenBSD — signed integer overflow in TCP SACK implementation, remote denial of service via null pointer dereference
+- 16-year-old vulnerability in FFmpeg H.264 codec — slice counter mismatch between 32-bit and 16-bit fields causes out-of-bounds heap write. Automated tools executed this code 5 million times without catching it.
+- 17-year-old FreeBSD NFS RPC vulnerability (CVE-2026-4747) — stack buffer overflow in RPCSEC_GSS authentication allowing unauthenticated root access via ROP chain fragmented across multiple packets
+- Autonomously chained up to 4 Linux kernel vulnerabilities (KASLR bypasses, OOB read/writes, heap manipulation) to gain full machine control
+- Firefox 147 JavaScript engine: 181 working exploits (vs. 2 for the previous model, Opus 4.6)
+- OSS-Fuzz benchmarking: 595 crashes at tiers 1-2, 10 full control flow hijacks vs. 1 for prior models
 - Thousands of previously unknown high-severity flaws across foundational software
+- Can reverse-engineer closed-source and firmware targets
+
+**The human factor:** "Engineers at Anthropic with no formal security training have asked Mythos Preview to find remote code execution vulnerabilities overnight, and woken up the following morning to a complete, working exploit."
+
+**Cost:** $50–$2,000 per individual exploit. ~$20,000 for the full OpenBSD vulnerability search (~1,000 scaffold runs). ~$10,000 for FFmpeg.
+
+**Disclosure:** Over 99% of discovered vulnerabilities remain unpatched. Anthropic uses SHA-3 hash commitments to prove possession of undisclosed findings without revealing details.
 
 **Access:** Restricted to ~50 partner organizations. Anthropic does not plan to make Mythos Preview generally available but aims to "enable users to safely deploy Mythos-class models at scale" with safeguards in an upcoming Opus model. Innovaiden estimates the capability gap is temporary — 12-18 months before broadly accessible.
 
@@ -55,6 +65,7 @@ Every organization that depends on software. The vulnerabilities Mythos found ex
 
 ## Key links
 - [Project Glasswing — Anthropic](https://www.anthropic.com/glasswing)
+- [Mythos Preview Capabilities Assessment (system card)](https://red.anthropic.com/2026/mythos-preview/)
 - [Innovaiden — Glasswing assessment baseline analysis](https://www.innovaiden.com/insights/project-glasswing-cybersecurity-assessment-baseline)
 - [Simon Willison — Glasswing analysis](https://simonwillison.net/2026/Apr/7/project-glasswing/)
 

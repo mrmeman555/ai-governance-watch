@@ -12,7 +12,9 @@ Every compliance framework — SOC 2, HIPAA, HITRUST, ISO 27001, CMMC — requir
 - "We run regular vulnerability scans" is no longer sufficient as a control narrative if the scans only check known CVEs
 - The gap between "we scan for known vulnerabilities" and "we discover unknown vulnerabilities" is now a documentable risk
 
-The Linux kernel finding is especially significant: Mythos didn't just find individual bugs — it autonomously chained multiple kernel vulnerabilities to gain full machine control. That's not scanning. That's offensive security research performed by a model.
+The Linux kernel finding is especially significant: Mythos didn't just find individual bugs — it autonomously chained up to 4 kernel vulnerabilities to gain full machine control. That's not scanning. That's offensive security research performed by a model. Against Firefox 147's JavaScript engine alone, Mythos produced 181 working exploits where the previous model managed 2.
+
+The [244-page system card](https://red.anthropic.com/2026/mythos-preview/) documents the cost: $50–$2,000 per exploit. Engineers with no formal security training asked Mythos to find RCE vulnerabilities overnight and woke up to complete, working exploits. Over 99% of discovered vulnerabilities remain unpatched.
 
 **The question that's coming:** "Should our vulnerability management program account for AI-augmented discovery?" Within 18 months, the answer is probably yes.
 
