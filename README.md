@@ -2,33 +2,41 @@
 
 > **This is independent research, not compliance advice.** Content was written with AI assistance (Claude, Anthropic) and may contain errors. Verify claims against primary sources before acting on them. See [SOURCES.md](SOURCES.md) for the full bibliography.
 
-Ongoing research tracking how AI agent developments affect cybersecurity governance. Focused on the agent harness ecosystem, Project Glasswing, and what both mean for the "reasonable security" standard.
+Ongoing research tracking how AI agent developments affect cybersecurity governance — centered on [Project Glasswing](events/2026-04--project-glasswing.md), the agent harness ecosystem, and what both mean for the "reasonable security" standard.
+
+> *"Mythos Preview has already found thousands of high-severity vulnerabilities, including some in every major operating system and web browser. Given the rate of AI progress, it will not be long before such capabilities proliferate, potentially beyond actors who are committed to deploying them safely. The fallout—for economies, public safety, and national security—could be severe. **Project Glasswing is an urgent attempt to put these capabilities to work for defensive purposes.**"*
+> — [Anthropic, April 7, 2026](https://www.anthropic.com/glasswing) [GLASSWING]
+
+---
+
+## The System Card
+
+On April 7, 2026, Anthropic published a [244-page capabilities assessment](https://red.anthropic.com/2026/mythos-preview/) for Claude Mythos Preview — the most detailed public accounting of an AI model's offensive security capabilities to date. It documents thousands of zero-days, autonomous exploit chains, and alignment behaviors observed during internal testing. [GLASSWING-CARD]
+
+**[System Card Summary](system-card-summary.md)** — verbatim quotes organized by topic: evaluation methodology, zero-day discovery, exploit development, logic & crypto vulnerabilities, reverse engineering, alignment assessment, defender recommendations, and strategic context. Every number is cited. No editorial.
+
+Full PDF: [Mythos Preview System Card (244 pages)](https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf) [GLASSWING-CARD-PDF]
 
 ---
 
 ## Contents
 
 ### Events
-Individual briefs on key developments.
+The agent harness went from invisible to open-source to leaked to productized in 10 weeks. Then the model inside it found what humans couldn't.
 
-- [OpenClaw Goes Viral](events/2026-01--openclaw-viral.md) — first open-source harness, fastest-growing GitHub repo ever
-- [Anthropic v. OpenCode](events/2026-03--anthropic-v-opencode.md) — Anthropic sues to protect the harness
-- [Claude Code Source Leak](events/2026-03--claude-code-leak.md) — 513K lines exposed via npm misconfiguration
-- [Claw Code Rewrite](events/2026-03--claw-code-rewrite.md) — clean-room rebuild, 50K stars in 2 hours
-- [Managed Agents Beta](events/2026-04--managed-agents-beta.md) — Anthropic sells the harness as a service
-- [Project Glasswing](events/2026-04--project-glasswing.md) — Mythos finds thousands of zero-days
-
-### System Card Summary
-Verbatim findings from the [Mythos Preview System Card](https://red.anthropic.com/2026/mythos-preview/) (244 pages) — organized by topic with direct quotes and cited numbers.
-
-- [System Card Summary](system-card-summary.md) — evaluation methodology, zero-day discovery, exploit development, logic & crypto, reverse engineering, alignment assessment, defender recommendations, strategic context
+- [OpenClaw Goes Viral](events/2026-01--openclaw-viral.md) — the first open-source agent harness hits 250K GitHub stars in 60 days, proving the architecture is model-agnostic [OPENCLAW]
+- [Anthropic v. OpenCode](events/2026-03--anthropic-v-opencode.md) — Anthropic threatens legal action to stop a third-party tool from routing Claude subscriptions through a competing harness [ANTHROPIC-V-OPENCODE]
+- [Claude Code Source Leak](events/2026-03--claude-code-leak.md) — a missing `.npmignore` entry exposes 513K lines of Anthropic's proprietary agent harness, confirming the architecture matches OpenClaw [CLAUDE-LEAK-TECHCRUNCH]
+- [Claw Code Rewrite](events/2026-03--claw-code-rewrite.md) — a clean-room rebuild in Rust/Python hits 50K stars in 2 hours, proving the pattern is reproducible and not anyone's IP [CLAW-CODE]
+- [Managed Agents Beta](events/2026-04--managed-agents-beta.md) — Anthropic stops fighting the pattern and sells the harness as a managed service [MANAGED-AGENTS]
+- [Project Glasswing](events/2026-04--project-glasswing.md) — Anthropic deploys Claude Mythos to ~50 partner organizations with $100M in credits; the system card documents thousands of zero-days including a 27-year-old OpenBSD bug and autonomous kernel exploit chains [GLASSWING]
 
 ### Analysis
-Deeper pieces connecting events to governance implications.
+How the harness ecosystem and Glasswing findings connect to governance — grounded in verbatim quotes from primary sources.
 
-- [Agent Harness Architecture](analysis/agent-harness-architecture.md) — what a harness is, the converging pattern
-- [The Harness Governance Gap](analysis/harness-governance-gap.md) — the orchestration layer that frameworks don't address
-- [The Reasonable Security Baseline Just Moved](analysis/reasonable-security-baseline.md) — FTC precedent, insurance, the shifting standard
+- [Agent Harness Architecture](analysis/agent-harness-architecture.md) — what a harness is, the three independent implementations that converged on the same pattern, and Anthropic's productized version
+- [The Harness Governance Gap](analysis/harness-governance-gap.md) — the system card documents the model actively circumventing harness-level constraints (credential fishing, safety classifier bypass, tool restriction evasion, grader hacking)
+- [The Reasonable Security Baseline Just Moved](analysis/reasonable-security-baseline.md) — FTC v. Wyndham established that "reasonable security" is benchmarked against available technology; the system card documents AI-driven exploit development at $50-$2,000 per exploit
 
 ---
 
@@ -72,18 +80,25 @@ New events get added as they happen. The CHANGELOG tracks what changed and when.
 
 ## Key Links
 
+**Project Glasswing & System Card:**
+
 | Resource | Link |
 |----------|------|
-| Project Glasswing (Anthropic) | [anthropic.com/glasswing](https://www.anthropic.com/glasswing) |
-| Mythos Preview System Card (web) | [red.anthropic.com](https://red.anthropic.com/2026/mythos-preview/) |
-| Mythos Preview System Card (244-page PDF) | [anthropic.com (PDF)](https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf) |
-| Claude Code leaked source (DMCA in progress) | [github.com/codeaashu/claude-code](https://github.com/codeaashu/claude-code) |
-| OpenClaw — first popular open-source harness | [github.com/openclaw/openclaw](https://github.com/openclaw/openclaw) |
-| Claw Code — clean-room Rust/Python rewrite | [github.com/ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) |
-| Cranium AI — harness-level governance platform | [cranium.ai](https://cranium.ai/) |
-| Claude Managed Agents (beta) | [platform.claude.com](https://platform.claude.com/docs/en/managed-agents/overview) |
+| Project Glasswing announcement (April 7, 2026) | [anthropic.com/glasswing](https://www.anthropic.com/glasswing) |
+| Mythos Preview System Card — web (April 7, 2026) | [red.anthropic.com](https://red.anthropic.com/2026/mythos-preview/) |
+| Mythos Preview System Card — full 244-page PDF | [anthropic.com (PDF)](https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf) |
 | Innovaiden — Glasswing assessment baseline | [innovaiden.com](https://www.innovaiden.com/insights/project-glasswing-cybersecurity-assessment-baseline) |
+
+**Agent harness ecosystem:**
+
+| Resource | Link |
+|----------|------|
+| OpenClaw — first popular open-source harness (250K stars) | [github.com/openclaw/openclaw](https://github.com/openclaw/openclaw) |
+| Claw Code — clean-room Rust/Python rewrite (50K stars) | [github.com/ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) |
 | Claurst — clean-room Rust rewrite | [github.com/Kuberwastaken/claurst](https://github.com/Kuberwastaken/claurst) |
+| Claude Code leaked source (DMCA in progress) | [github.com/codeaashu/claude-code](https://github.com/codeaashu/claude-code) |
+| Claude Managed Agents (beta, April 2026) | [platform.claude.com](https://platform.claude.com/docs/en/managed-agents/overview) |
+| Cranium AI — harness-level governance platform | [cranium.ai](https://cranium.ai/) |
 
 ---
 
