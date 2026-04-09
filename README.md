@@ -4,6 +4,25 @@ A collection of reference material on agent harnesses, AI governance gaps, and r
 
 ---
 
+## Contents
+
+### [Agent Harnesses — What Makes AI Models Intelligent](agent-harnesses.md)
+What an agent harness is, why it matters more than the model itself, and how three real harnesses (Claude Code, OpenClaw, Claw Code) reveal a converging architecture that governance frameworks haven't caught up to yet.
+
+### [Agent Harness Risk & Control Matrix (SOC 2 Mapping)](harness-risk-matrix.md)
+A control-by-control mapping of harness governance areas — tool execution auth, payload logging, memory persistence, subagent delegation, rate/cost guardrails — to SOC 2 Trust Services Criteria.
+
+### [Project Glasswing — What It Means for GRC](glasswing-brief.md)
+Anthropic launched Project Glasswing on April 7, 2026 with AWS, Apple, Google, Microsoft, CrowdStrike, and others. Their Mythos model found thousands of zero-day vulnerabilities — including bugs that survived 27 years of human review. This brief covers what that means for SOC 2, HITRUST, HIPAA, and vCISO advisory practices.
+
+---
+
+## TLDR
+
+In 10 weeks, the agent harness — the orchestration layer that gives AI models agency — went from invisible to open-source to leaked to productized. Three independent codebases proved the architecture is converging into a standard. Then the model inside the harness found thousands of zero-days that humans missed for decades. Two governance gaps now exist: the frameworks don't address the harness, and the "reasonable security" baseline just shifted. Both gaps land on the same desk.
+
+---
+
 ## What happened in the last 10 weeks
 
 **Late January — The world finds out what a harness is.** OpenClaw, an open-source agent harness, hit 100K GitHub stars in 2 days and 250K in 60 days — the fastest-growing repo in GitHub history. It showed that the model is interchangeable. Claude, GPT, Gemini, a local model — swap them in, the agent still works. The thing that gives a model agency isn't the model. It's the harness: the orchestration layer that manages tools, permissions, memory, and execution.
@@ -24,19 +43,6 @@ A collection of reference material on agent harnesses, AI governance gaps, and r
 
 ---
 
-## Contents
-
-### [Agent Harnesses — What Makes AI Models Intelligent](agent-harnesses.md)
-What an agent harness is, why it matters more than the model itself, and how three real harnesses (Claude Code, OpenClaw, Claw Code) reveal a converging architecture that governance frameworks haven't caught up to yet.
-
-### [Agent Harness Risk & Control Matrix (SOC 2 Mapping)](harness-risk-matrix.md)
-A control-by-control mapping of harness governance areas — tool execution auth, payload logging, memory persistence, subagent delegation, rate/cost guardrails — to SOC 2 Trust Services Criteria. Includes vCISO implementation notes.
-
-### [Project Glasswing — What It Means for GRC](glasswing-brief.md)
-Anthropic launched Project Glasswing on April 7, 2026 with AWS, Apple, Google, Microsoft, CrowdStrike, and others. Their Mythos model found thousands of zero-day vulnerabilities — including bugs that survived 27 years of human review. This brief covers what that means for SOC 2, HITRUST, HIPAA, and vCISO advisory practices.
-
----
-
 ## Key Links
 
 | Resource | Link |
@@ -45,6 +51,7 @@ Anthropic launched Project Glasswing on April 7, 2026 with AWS, Apple, Google, M
 | Claude Code leaked source (DMCA in progress) | [github.com/codeaashu/claude-code](https://github.com/codeaashu/claude-code) |
 | Claurst — clean-room Rust rewrite | [github.com/Kuberwastaken/claurst](https://github.com/Kuberwastaken/claurst) |
 | OpenClaw — first popular open-source harness | [github.com/openclaw/openclaw](https://github.com/openclaw/openclaw) |
+| Claw Code — clean-room Rust/Python rewrite | [github.com/ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) |
 | Cranium AI — harness-level governance platform | [cranium.ai](https://cranium.ai/) |
 | Claude Managed Agents — Anthropic's harness-as-a-service (beta) | [platform.claude.com](https://platform.claude.com/docs/en/managed-agents/overview) |
 | Innovaiden — Glasswing assessment baseline analysis | [innovaiden.com](https://www.innovaiden.com/insights/project-glasswing-cybersecurity-assessment-baseline) |
