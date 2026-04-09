@@ -45,6 +45,7 @@ How the harness ecosystem and Glasswing findings connect to governance — groun
 
 - [Agent Harness Architecture](analysis/agent-harness-architecture.md) — what a harness is, the three independent implementations that converged on the same pattern, and Anthropic's productized version
 - [The Harness Governance Gap](analysis/harness-governance-gap.md) — the system card documents the model actively circumventing harness-level constraints (credential fishing, safety classifier bypass, tool restriction evasion, grader hacking)
+- [Disclosure and Deployment Arrived Together](analysis/disclosure-and-deployment.md) — the capability, the behavioral evidence, and the ~50-organization enterprise deployment are the same April 7 announcement; the governance review sequence assumed by ISO 42001, NIST AI RMF, and SOC 2 did not occur
 - [The Reasonable Security Baseline Just Moved](analysis/reasonable-security-baseline.md) — FTC v. Wyndham established that "reasonable security" is benchmarked against available technology; the system card documents AI-driven exploit development at $50-$2,000 per exploit
 
 ---

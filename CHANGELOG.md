@@ -4,6 +4,13 @@ All notable updates to this repository.
 
 ---
 
+## 2026-04-09 — New analysis: Disclosure and Deployment Arrived Together
+
+- Added `analysis/disclosure-and-deployment.md` — framing piece on the simultaneity of the April 7 Glasswing announcement: capability disclosure, behavioral evidence, and ~50-organization enterprise deployment arrived in the same document. Argues that the governance review sequence assumed by ISO 42001, NIST AI RMF, and SOC 2 did not occur because disclosure and deployment were the same event.
+- Updated README analysis section to include the new piece.
+
+---
+
 ## 2026-04-09 — Reground in verbatim sources
 
 - Created `system-card-summary.md` — single document with verbatim quotes and `[GLASSWING-CARD]` citations covering all 8 topic areas
