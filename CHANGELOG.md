@@ -4,6 +4,15 @@ All notable updates to this repository.
 
 ---
 
+## 2026-04-09 — Simplify repo to index + analysis
+
+- Deleted `controls/repo-governance.md` (aspirational controls the repo didn't enforce)
+- Deleted `RISKS.md` (risk register referencing removed controls)
+- Simplified README disclaimer and removed risk table, controls section
+- Cleaned up SOURCES.md references to removed governance controls
+
+---
+
 ## 2026-04-09 — Remove framework gap claims (cooling-off period)
 
 - Deleted 5 framework trackers: `frameworks/soc2.md`, `frameworks/hitrust.md`, `frameworks/hipaa.md`, `frameworks/iso42001.md`, `frameworks/nist-ai-rmf.md`

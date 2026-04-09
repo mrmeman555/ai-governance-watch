@@ -2,9 +2,7 @@
 
 > Central bibliography for all claims in this repository.
 > Referenced from artifacts using `[CITATION-KEY]` markers.
-> Complies with [RC-01 (Unsourced Claims)](controls/repo-governance.md) and [RC-03 (Link Rot)](controls/repo-governance.md).
->
-> Last updated: 2026-04-08
+> Last updated: 2026-04-09
 
 ---
 
@@ -316,7 +314,7 @@ https://github.com/mrmeman555/ai-security-governance
 
 ## Pending Sources
 
-The following sources are referenced in artifacts but lack verified URLs. Per [RC-03](controls/repo-governance.md), enough context is provided to locate them if links break.
+The following sources are referenced in artifacts but lack verified URLs. Enough context is provided to locate them if links break.
 
 | Citation Key | What's Needed | Status |
 |-------------|---------------|--------|
@@ -337,4 +335,4 @@ The following sources are referenced in artifacts but lack verified URLs. Per [R
 
 ---
 
-*This bibliography is maintained alongside the artifacts it supports. When a new event or finding is added, its sources are registered here. See [repo-governance.md](controls/repo-governance.md) for sourcing standards.*
+*This bibliography is maintained alongside the artifacts it supports. When a new event or finding is added, its sources are registered here.*

@@ -1,24 +1,6 @@
 # AI Governance Watch
 
-> **This is independent research, not compliance advice.** The analysis here reflects one practitioner's interpretation of how recent AI developments intersect with cybersecurity governance. Do not use this as a substitute for qualified legal, compliance, or security counsel. Content was written with AI assistance (Claude, Anthropic) and may contain errors. Events are moving fast; verify claims against primary sources before acting on them. See [SOURCES.md](SOURCES.md) for the full bibliography, [repo-governance.md](controls/repo-governance.md) for content controls, and [RISKS.md](RISKS.md) for the full risk register.
-
-### Known risks to this repo ([full register](RISKS.md))
-
-This list is not guaranteed to be comprehensive. This repo exists for personal practice and reference.
-
-| Risk | Severity | Key question |
-|------|----------|-------------|
-| [RR-01](RISKS.md#rr-01--content-staleness) Staleness | **HIGH** | When was this last reviewed? |
-| [RR-02](RISKS.md#rr-02--source-concentration) Source concentration | MEDIUM | How much comes from Anthropic's own disclosures? |
-| [RR-03](RISKS.md#rr-03--ai-hallucination-in-content) AI hallucination | MEDIUM | Has every factual claim been verified against its source? |
-| [RR-04](RISKS.md#rr-04--single-author-bias) Single-author bias | **HIGH** | Who else has reviewed this analysis? |
-| [RR-05](RISKS.md#rr-05--unverified-sources) Unverified sources | MEDIUM | Which claims depend on pending sources? |
-| [RR-06](RISKS.md#rr-06--framework-interpretation-error) Framework misreading | MEDIUM | Was the actual standard text consulted? |
-| [RR-07](RISKS.md#rr-07--dual-use-concern) Dual-use | LOW | Does this add info beyond what's already public? |
-| [RR-08](RISKS.md#rr-08--scope-creep) Scope creep | LOW | Does every piece serve the governance thesis? |
-| [RR-09](RISKS.md#rr-09--vendor-advocacy) Vendor advocacy | LOW | Are product mentions descriptive or prescriptive? |
-| [RR-10](RISKS.md#rr-10--temporal-compression-bias) Temporal compression | **HIGH** | Was there a cooling-off period before publishing? |
-| [RR-11](RISKS.md#rr-11--overstatement-of-gaps) Gap overstatement | MEDIUM | Would an auditor agree these are gaps? |
+> **This is independent research, not compliance advice.** Content was written with AI assistance (Claude, Anthropic) and may contain errors. Verify claims against primary sources before acting on them. See [SOURCES.md](SOURCES.md) for the full bibliography.
 
 Ongoing research tracking how AI agent developments affect cybersecurity governance. Focused on the agent harness ecosystem, Project Glasswing, and what both mean for the "reasonable security" standard.
 
@@ -54,10 +36,6 @@ Deeper pieces connecting events to governance implications.
 - [Agent Harness Architecture](analysis/agent-harness-architecture.md) — what a harness is, the converging pattern
 - [The Harness Governance Gap](analysis/harness-governance-gap.md) — the orchestration layer that frameworks don't address
 - [The Reasonable Security Baseline Just Moved](analysis/reasonable-security-baseline.md) — FTC precedent, insurance, the shifting standard
-
-### Controls
-- [Repository Governance Controls](controls/repo-governance.md) — how this repo governs its own content: sourcing, review, corrections, bias
-- [Repository Risk Register](RISKS.md) — running list of risks to this repo's credibility, with current severity and open questions
 
 ---
 
@@ -120,4 +98,4 @@ New events get added as they happen. The CHANGELOG tracks what changed and when.
 *April 2026 — Aaron Reveley*
 
 > *Research and analysis by Aaron Reveley. Writing assisted by Claude (Anthropic).*
-> *All citation keys reference [SOURCES.md](SOURCES.md). See [repo-governance.md](controls/repo-governance.md) for sourcing standards.*
+> *All citation keys reference [SOURCES.md](SOURCES.md).*
