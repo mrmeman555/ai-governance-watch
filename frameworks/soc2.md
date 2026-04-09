@@ -10,7 +10,7 @@ Living document tracking how AI agent developments affect SOC 2 Trust Services C
 
 **Current language:** Requires organizations to identify and assess risks to the achievement of objectives.
 
-**Gap/finding:** Must now account for accelerated exploitation windows. If an AI can find a 27-year-old bug in hours, traditional "low" risk ratings for legacy code are no longer defensible. Risk assessments should consider: "What is our exposure to zero-day vulnerabilities in foundational software, and what is our detection capability for vulnerabilities that don't appear in known databases?"
+**Gap/finding:** Must now account for accelerated exploitation windows. If an AI can find a 27-year-old bug in hours — and autonomously chain multiple Linux kernel vulnerabilities to gain full machine control — traditional "low" risk ratings for legacy code are no longer defensible. Anthropic published a 244-page system card documenting these capabilities. Risk assessments should consider: "What is our exposure to zero-day vulnerabilities in foundational software, and what is our detection capability for vulnerabilities that don't appear in known databases?"
 
 ---
 

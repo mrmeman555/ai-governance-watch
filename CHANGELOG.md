@@ -4,6 +4,16 @@ All notable updates to this repository.
 
 ---
 
+## 2026-04-08 — Glasswing day-after updates
+
+- Added Linux kernel autonomous exploit chaining (from 244-page system card)
+- Added day-after fallout: NBC/WIRED/ZDNET coverage, stock market surge, Section 702 FISA push
+- Added Pentagon FY2027 budget: AI warfare expansion + $707M CISA cut
+- Updated Glasswing event brief, SOC 2 framework tracker, reasonable-security-baseline analysis, README timeline
+- Added Linux Foundation and Apache Software Foundation as named donation recipients
+
+---
+
 ## 2026-04-08 — Restructure: ai-security-governance → ai-governance-watch
 
 **What changed:**

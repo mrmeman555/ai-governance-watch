@@ -12,7 +12,13 @@ Every compliance framework — SOC 2, HIPAA, HITRUST, ISO 27001, CMMC — requir
 - "We run regular vulnerability scans" is no longer sufficient as a control narrative if the scans only check known CVEs
 - The gap between "we scan for known vulnerabilities" and "we discover unknown vulnerabilities" is now a documentable risk
 
+The Linux kernel finding is especially significant: Mythos didn't just find individual bugs — it autonomously chained multiple kernel vulnerabilities to gain full machine control. That's not scanning. That's offensive security research performed by a model.
+
 **The question that's coming:** "Should our vulnerability management program account for AI-augmented discovery?" Within 18 months, the answer is probably yes.
+
+## The CISA Budget Signal
+
+On April 8 — one day after Glasswing launched — the Pentagon's FY2027 budget proposal hit: massive expansion in autonomous warfare and AI adoption, alongside a $707M cut to CISA to refocus it on protecting critical infrastructure. The federal government is expanding AI offense while reducing the agency responsible for civilian defense. For GRC practitioners, this signals that the private sector should expect less federal support for vulnerability coordination, not more — at the same moment when AI is accelerating the threat.
 
 ## Legal Precedent — FTC "Reasonable Security"
 
