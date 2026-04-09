@@ -1,6 +1,6 @@
 # AI Agent Harness — Risk & Control Matrix (SOC 2 Mapping)
 
-> **Purpose:** Evaluate an AI agent harness (the orchestration layer) against SOC 2 Trust Services Criteria. Addresses the governance gap by auditing the middleware that manages tool execution and memory — not just the LLM itself.
+> **Purpose:** Evaluate an AI agent harness (the orchestration layer) against SOC 2 Trust Services Criteria [SOC2-TSC]. Addresses the governance gap by auditing the middleware that manages tool execution and memory — not just the LLM itself.
 
 ---
 
@@ -25,3 +25,4 @@
 ---
 
 > *Research and analysis by Aaron Reveley. Writing assisted by Claude (Anthropic).*
+> *Citation keys reference [SOURCES.md](../SOURCES.md).*

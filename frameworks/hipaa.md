@@ -1,6 +1,6 @@
 # HIPAA — AI Agent Impact Tracker
 
-Living document tracking how AI agent developments affect HIPAA Security Rule compliance.
+Living document tracking how AI agent developments affect HIPAA Security Rule [HIPAA-SEC] compliance.
 
 ---
 
@@ -27,3 +27,4 @@ This seems like the kind of thing that comes up in the next risk assessment cycl
 ---
 
 *Last updated: 2026-04-08*
+*Citation keys reference [SOURCES.md](../SOURCES.md).*

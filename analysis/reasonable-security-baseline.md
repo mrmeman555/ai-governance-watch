@@ -2,7 +2,7 @@
 
 ## The Shift
 
-Every compliance framework — SOC 2, HIPAA, HITRUST, ISO 27001, CMMC — requires organizations to implement "reasonable" or "proportionate" security measures. That standard is benchmarked against prevailing industry practices.
+Every compliance framework — SOC 2 [SOC2-TSC], HIPAA [HIPAA-SEC], HITRUST [HITRUST-CSF], ISO 27001, CMMC [CMMC] — requires organizations to implement "reasonable" or "proportionate" security measures. That standard is benchmarked against prevailing industry practices.
 
 [Project Glasswing](../events/2026-04--project-glasswing.md) changed the benchmark. When an AI model can find vulnerabilities that survived 27 years of expert human review and 5 million automated test executions, the definition of what constitutes adequate vulnerability management has shifted. Assessments completed before April 2026 are benchmarked against a demonstrably lower standard.
 
@@ -14,17 +14,17 @@ Every compliance framework — SOC 2, HIPAA, HITRUST, ISO 27001, CMMC — requir
 
 The Linux kernel finding is especially significant: Mythos didn't just find individual bugs — it autonomously chained up to 4 kernel vulnerabilities to gain full machine control. That's not scanning. That's offensive security research performed by a model. Against Firefox 147's JavaScript engine alone, Mythos produced 181 working exploits where the previous model managed 2.
 
-The [244-page system card](https://red.anthropic.com/2026/mythos-preview/) documents the cost: $50–$2,000 per exploit. Engineers with no formal security training asked Mythos to find RCE vulnerabilities overnight and woke up to complete, working exploits. Over 99% of discovered vulnerabilities remain unpatched.
+The [244-page system card](https://red.anthropic.com/2026/mythos-preview/) [GLASSWING-CARD] documents the cost: $50–$2,000 per exploit. Engineers with no formal security training asked Mythos to find RCE vulnerabilities overnight and woke up to complete, working exploits. Over 99% of discovered vulnerabilities remain unpatched.
 
 **The question that's coming:** "Should our vulnerability management program account for AI-augmented discovery?" Within 18 months, the answer is probably yes.
 
 ## The CISA Budget Signal
 
-On April 8 — one day after Glasswing launched — the Pentagon's FY2027 budget proposal hit: massive expansion in autonomous warfare and AI adoption, alongside a $707M cut to CISA to refocus it on protecting critical infrastructure. The federal government is expanding AI offense while reducing the agency responsible for civilian defense. For GRC practitioners, this signals that the private sector should expect less federal support for vulnerability coordination, not more — at the same moment when AI is accelerating the threat.
+On April 8 — one day after Glasswing launched — the Pentagon's FY2027 budget proposal hit [FY2027-BUDGET]: massive expansion in autonomous warfare and AI adoption, alongside a $707M cut to CISA to refocus it on protecting critical infrastructure. The federal government is expanding AI offense while reducing the agency responsible for civilian defense. For GRC practitioners, this signals that the private sector should expect less federal support for vulnerability coordination, not more — at the same moment when AI is accelerating the threat.
 
 ## Legal Precedent — FTC "Reasonable Security"
 
-The FTC has historically benchmarked "reasonableness" against available technology. In *FTC v. Wyndham Worldwide*, the court upheld the FTC's authority to enforce data security standards based on what was commercially available and what the company should have known.
+The FTC has historically benchmarked "reasonableness" against available technology. In *FTC v. Wyndham Worldwide* [FTC-WYNDHAM], the court upheld the FTC's authority to enforce data security standards based on what was commercially available and what the company should have known.
 
 **The Glasswing implication:** Project Glasswing establishes that AI-driven vulnerability scanning is now commercially "available" to defenders — at least to the ~50 partner organizations. As this capability broadens, its non-use becomes a potential indicator of negligence in future enforcement. The precedent is clear: "we didn't know" stops being a defense when the capability is publicly documented and accessible.
 
@@ -55,9 +55,11 @@ Potential service areas this touches: AI-augmented assessment methodology, polic
 ---
 
 **Sources:**
-- [Project Glasswing — Anthropic](https://www.anthropic.com/glasswing)
-- [Innovaiden — Glasswing assessment baseline analysis](https://www.innovaiden.com/insights/project-glasswing-cybersecurity-assessment-baseline)
-- [Simon Willison — Glasswing analysis](https://simonwillison.net/2026/Apr/7/project-glasswing/)
+- [Project Glasswing — Anthropic](https://www.anthropic.com/glasswing) [GLASSWING]
+- [Mythos Preview System Card](https://red.anthropic.com/2026/mythos-preview/) [GLASSWING-CARD]
+- [Innovaiden — Glasswing assessment baseline analysis](https://www.innovaiden.com/insights/project-glasswing-cybersecurity-assessment-baseline) [INNOVAIDEN-GLASSWING]
+- [Simon Willison — Glasswing analysis](https://simonwillison.net/2026/Apr/7/project-glasswing/) [WILLISON-GLASSWING]
+- Full bibliography: [SOURCES.md](../SOURCES.md)
 
 ---
 

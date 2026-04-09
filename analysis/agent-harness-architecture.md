@@ -19,7 +19,7 @@ Every agent harness has the same core components:
 | **Orchestration** | Multi-step planning, subagent dispatch, task decomposition |
 | **Audit / logging** | What gets recorded — tool calls, decisions, outputs, provenance |
 
-The permission layer and audit logging are where **governance** lives. This is the layer that ISO 42001, NIST AI RMF, and every future AI governance framework will need to address — and almost none of them do yet.
+The permission layer and audit logging are where **governance** lives. This is the layer that ISO 42001 [ISO-42001], NIST AI RMF [NIST-AI-RMF], and every future AI governance framework will need to address — and almost none of them do yet.
 
 ## The Convergence
 
@@ -28,12 +28,12 @@ Between January and April 2026, three independent implementations of this archit
 | Harness | Origin | Language | Stars | Key detail |
 |---------|--------|----------|-------|------------|
 | [Claude Code](../events/2026-03--claude-code-leak.md) | Anthropic (proprietary, leaked) | TypeScript | — | ~40 tools, dynamic permission gates, subagent orchestration, hook system |
-| [OpenClaw](../events/2026-01--openclaw-viral.md) | Open source | Multi-language | 247K+ | Multi-model proxy, SOUL.md identity files, 162+ agent templates |
-| [Claw Code](../events/2026-03--claw-code-rewrite.md) | Clean-room rewrite | Python/Rust | 50K+ | Independently audited, no proprietary code, legally untouchable |
+| [OpenClaw](../events/2026-01--openclaw-viral.md) [OPENCLAW] | Open source | Multi-language | 247K+ | Multi-model proxy, SOUL.md identity files, 162+ agent templates |
+| [Claw Code](../events/2026-03--claw-code-rewrite.md) [CLAW-CODE] | Clean-room rewrite | Python/Rust | 50K+ | Independently audited, no proprietary code, legally untouchable |
 
 When three codebases built independently all arrive at the same architecture — tools, permissions, context, memory, orchestration, logging — it's not anyone's IP. It's an emerging standard. The governance questions are identical regardless of which harness you use.
 
-Anthropic confirmed this interpretation by [launching Managed Agents](../events/2026-04--managed-agents-beta.md) in April 2026 — selling the harness itself as a managed service. The four core concepts (Agent, Environment, Session, Events) map directly to the architecture table above.
+Anthropic confirmed this interpretation by [launching Managed Agents](../events/2026-04--managed-agents-beta.md) [MANAGED-AGENTS] in April 2026 — selling the harness itself as a managed service. The four core concepts (Agent, Environment, Session, Events) map directly to the architecture table above.
 
 ## Why This Matters
 
@@ -46,3 +46,4 @@ For a SOC 2-mapped control matrix targeting harness-level risks, see [harness-ri
 ---
 
 *Added: 2026-04-08*
+*Citation keys reference [SOURCES.md](../SOURCES.md).*

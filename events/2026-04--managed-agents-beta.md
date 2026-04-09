@@ -4,7 +4,7 @@
 2026-04-01
 
 ## Source
-- https://platform.claude.com/docs/en/managed-agents/overview
+- [MANAGED-AGENTS] https://platform.claude.com/docs/en/managed-agents/overview
 
 ## What happened
 Anthropic launched Claude Managed Agents in beta — a pre-built, configurable agent harness running in Anthropic's cloud infrastructure. Instead of building your own agent loop, tool execution, and runtime, enterprises get a fully managed environment where Claude can read files, run commands, browse the web, and execute code.
@@ -26,16 +26,17 @@ Multi-agent orchestration and persistent memory are in research preview. The har
 Enterprise AI adopters. Managed Agents shifts the deployment model from "build your own harness" to "buy a managed one." This changes the responsibility model for governance — organizations inherit some controls from Anthropic but own the configuration, tool scoping, and data handling.
 
 ## Framework impact
-- **SOC 2:** CC6.1 (Access) — managed harness introduces shared responsibility. Who controls tool permissions: the customer or Anthropic? CC2.1 (Communication) — event streaming and server-side persistence create new data handling obligations.
-- **HITRUST:** AI Security Assessment inheritance model becomes directly relevant — what do you inherit from the managed harness provider?
-- **HIPAA:** If the managed harness processes ePHI, BAA requirements apply to Anthropic's infrastructure
-- **ISO 42001:** Section 8.2 needs to account for managed vs. self-hosted harness deployment models
-- **NIST AI RMF:** GOVERN 2.1 — accountability splits between harness provider and customer
+- **SOC 2:** CC6.1 (Access) — managed harness introduces shared responsibility. Who controls tool permissions: the customer or Anthropic? CC2.1 (Communication) — event streaming and server-side persistence create new data handling obligations. [SOC2-TSC]
+- **HITRUST:** AI Security Assessment inheritance model becomes directly relevant — what do you inherit from the managed harness provider? [HITRUST-AI]
+- **HIPAA:** If the managed harness processes ePHI, BAA requirements apply to Anthropic's infrastructure [HIPAA-SEC]
+- **ISO 42001:** Clause 8.4 needs to account for managed vs. self-hosted harness deployment models [ISO-42001]
+- **NIST AI RMF:** GOVERN 2.1 — accountability splits between harness provider and customer [NIST-AI-RMF]
 
 ## Key links
-- [Claude Managed Agents docs](https://platform.claude.com/docs/en/managed-agents/overview)
-- [API reference](https://platform.claude.com/docs/en/api/beta/sessions)
+- [Claude Managed Agents docs](https://platform.claude.com/docs/en/managed-agents/overview) [MANAGED-AGENTS]
+- [API reference](https://platform.claude.com/docs/en/api/beta/sessions) [MANAGED-AGENTS-API]
 
 ---
 
 *Added: 2026-04-08*
+*Citation keys reference [SOURCES.md](../SOURCES.md).*

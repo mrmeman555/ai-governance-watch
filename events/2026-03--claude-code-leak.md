@@ -4,9 +4,9 @@
 2026-03-31
 
 ## Source
-- [TechCrunch — Anthropic took down thousands of repos](https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/)
-- [Futurism — Anthropic suddenly cares about IP](https://futurism.com/artificial-intelligence/anthropic-suddenly-cares-about-intellectual-property-claude-leak)
-- [GitHub DMCA notice](https://github.com/github/dmca/blob/master/2026/03/2026-03-31-anthropic.md)
+- [CLAUDE-LEAK-TECHCRUNCH] [TechCrunch — Anthropic took down thousands of repos](https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/)
+- [CLAUDE-LEAK-FUTURISM] [Futurism — Anthropic suddenly cares about IP](https://futurism.com/artificial-intelligence/anthropic-suddenly-cares-about-intellectual-property-claude-leak)
+- [DMCA-ANTHROPIC] [GitHub DMCA notice](https://github.com/github/dmca/blob/master/2026/03/2026-03-31-anthropic.md)
 
 ## What happened
 A misconfigured npm package (version 2.1.88 of @anthropic-ai/claude-code) shipped a 59.8 MB source map file that exposed the complete TypeScript source code — 513,000 lines across 1,906 files. Security researcher Chaofan Shou tweeted the discovery, and 16 million people saw the thread.
@@ -30,18 +30,19 @@ When people compared the leaked architecture to OpenClaw, they saw the same patt
 Every organization using Claude Code (hundreds of thousands of developers). Every enterprise evaluating AI agent security. The leak exposed what the harness layer looks like — making governance discussions concrete rather than theoretical.
 
 ## Framework impact
-- **SOC 2:** CC6.1 (Access), CC7.1 (Detection) — the leak itself is a textbook supply chain control failure. The harness architecture revealed that tool calls go through permission gates, which maps directly to access control criteria.
-- **HITRUST:** None directly, but the supply chain failure demonstrates the kind of operational gap HITRUST 07.d should catch
+- **SOC 2:** CC6.1 (Access), CC7.1 (Detection) [SOC2-TSC] — the leak itself is a textbook supply chain control failure. The harness architecture revealed that tool calls go through permission gates, which maps directly to access control criteria.
+- **HITRUST:** None directly, but the supply chain failure demonstrates the kind of operational gap HITRUST 07.d should catch [HITRUST-CSF]
 - **HIPAA:** None directly
-- **ISO 42001:** Section 8.2 — the leaked architecture shows tool-call side effects and subagent delegation that 8.2 doesn't require impact assessment for
-- **NIST AI RMF:** MEASURE 2.6 — the audit logging visible in the leak (hook system, dispatch logs) is exactly what MEASURE 2.6 should require but doesn't specify
+- **ISO 42001:** Clause 8.4 — the leaked architecture shows tool-call side effects and subagent delegation that 8.4 doesn't require impact assessment for [ISO-42001]
+- **NIST AI RMF:** MEASURE 2.6 — the audit logging visible in the leak (hook system, dispatch logs) is exactly what MEASURE 2.6 should require but doesn't specify [NIST-AI-RMF]
 
 ## Key links
-- [Leaked source (DMCA in progress)](https://github.com/codeaashu/claude-code)
-- [Claurst — clean-room Rust rewrite](https://github.com/Kuberwastaken/claurst)
-- [Collection of analysis and rewrites](https://github.com/chauncygu/collection-claude-code-source-code)
-- [Full leak analysis](https://claudefa.st/blog/guide/mechanics/claude-code-source-leak)
+- [Leaked source (DMCA in progress)](https://github.com/codeaashu/claude-code) [REPO-CLAUDE-LEAK]
+- [Claurst — clean-room Rust rewrite](https://github.com/Kuberwastaken/claurst) [REPO-CLAURST]
+- [Collection of analysis and rewrites](https://github.com/chauncygu/collection-claude-code-source-code) [REPO-LEAK-COLLECTION]
+- [Full leak analysis](https://claudefa.st/blog/guide/mechanics/claude-code-source-leak) [CLAUDE-LEAK-ANALYSIS]
 
 ---
 
 *Added: 2026-04-08*
+*Citation keys reference [SOURCES.md](../SOURCES.md).*

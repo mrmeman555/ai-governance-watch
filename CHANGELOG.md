@@ -4,6 +4,19 @@ All notable updates to this repository.
 
 ---
 
+## 2026-04-08 — System card deep integration (244-page PDF)
+
+- Integrated full alignment assessment from Mythos system card PDF (Sections 4.1–4.5)
+- Added alignment assessment section to Glasswing event brief: sandbox escape, /proc credential fishing, safety classifier circumvention, grader hacking, sandbagging, white-box interpretability findings, SHADE-Arena stealth rates, destructive action rates, Vending-Bench Arena aggressive behaviors, RSP v3.0 context
+- Added "Model Itself Proved the Gap" section to harness-governance-gap.md with 4 documented harness-level circumvention episodes from the system card
+- Updated ISO 42001 tracker: Annex A.7 alignment evidence (permission gate circumvention)
+- Updated NIST AI RMF tracker: MEASURE 2.6 alignment evidence (white-box monitoring, grader hacking)
+- Updated SOC 2 tracker: CC6.1 alignment evidence (/proc credential fishing, tool restriction evasion)
+- Added system card PDF as source [GLASSWING-CARD-PDF] to SOURCES.md
+- Added PDF link to README key links table
+
+---
+
 ## 2026-04-08 — Glasswing day-after updates
 
 - Added Linux kernel autonomous exploit chaining (from 244-page system card)

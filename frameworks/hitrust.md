@@ -1,6 +1,6 @@
 # HITRUST — AI Agent Impact Tracker
 
-Living document tracking how AI agent developments affect HITRUST controls and assessments.
+Living document tracking how AI agent developments affect HITRUST controls [HITRUST-CSF] and assessments [HITRUST-AI].
 
 ---
 

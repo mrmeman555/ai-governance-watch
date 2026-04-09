@@ -4,7 +4,7 @@
 2026-03 (weeks before March 31 leak)
 
 ## Source
-- [Hacker News discussion](https://news.ycombinator.com/item?id=47444748)
+- [ANTHROPIC-V-OPENCODE] [Hacker News discussion](https://news.ycombinator.com/item?id=47444748)
 
 ## What happened
 Anthropic threatened legal action against OpenCode, a third-party coding agent that let users route their Claude subscription through OpenCode's harness instead of Claude Code. OpenCode had built plugins allowing Claude subscription holders to use their paid access through an alternative interface.
@@ -20,8 +20,8 @@ Any third-party tool that integrates with Claude through unofficial channels. Es
 - **SOC 2:** None directly
 - **HITRUST:** None directly
 - **HIPAA:** None directly
-- **ISO 42001:** Highlights vendor dependency risk — organizations relying on third-party harnesses face supply chain disruption if the model provider enforces harness exclusivity
-- **NIST AI RMF:** MAP 3.1 (Third-party AI risks) — vendor lock-in at the harness layer is a risk that should be documented
+- **ISO 42001:** Highlights vendor dependency risk — organizations relying on third-party harnesses face supply chain disruption if the model provider enforces harness exclusivity [ISO-42001]
+- **NIST AI RMF:** MAP 3.1 (Third-party AI risks) — vendor lock-in at the harness layer is a risk that should be documented [NIST-AI-RMF]
 
 ## Key links
 - [Hacker News — Anthropic takes legal action against OpenCode](https://news.ycombinator.com/item?id=47444748)
@@ -29,3 +29,4 @@ Any third-party tool that integrates with Claude through unofficial channels. Es
 ---
 
 *Added: 2026-04-08*
+*Citation keys reference [SOURCES.md](../SOURCES.md).*

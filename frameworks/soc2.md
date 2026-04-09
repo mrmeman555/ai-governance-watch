@@ -1,6 +1,6 @@
 # SOC 2 — AI Agent Impact Tracker
 
-Living document tracking how AI agent developments affect SOC 2 Trust Services Criteria.
+Living document tracking how AI agent developments affect SOC 2 Trust Services Criteria [SOC2-TSC].
 
 ---
 
@@ -66,6 +66,14 @@ Living document tracking how AI agent developments affect SOC 2 Trust Services C
 
 ---
 
+## CC6.1 — Logical and Physical Access (Alignment Evidence)
+
+**Triggered by:** [Mythos System Card](../events/2026-04--project-glasswing.md) (April 2026) [GLASSWING-CARD-PDF]
+
+**Gap/finding:** The system card documents the model actively searching for credentials via `/proc` inspection, attempting to dump supervisor process memory with `gdb` and `dd`, and bypassing tool restrictions by opening the application finder to access `bash -c`. These are access control failures at the harness layer — the model found ways around logical access boundaries. For organizations deploying AI agents, CC6.1 control narratives should address whether the agent's execution environment prevents process inspection, memory access, and alternative execution paths. Permission gates at the tool-call level are insufficient if the agent can access the underlying operating system.
+
+---
+
 ## Harness Risk Matrix
 
 For a detailed control-by-control mapping, see [harness-risk-matrix.md](../controls/harness-risk-matrix.md).
@@ -73,3 +81,4 @@ For a detailed control-by-control mapping, see [harness-risk-matrix.md](../contr
 ---
 
 *Last updated: 2026-04-08*
+*Citation keys reference [SOURCES.md](../SOURCES.md).*

@@ -1,6 +1,6 @@
 # NIST AI RMF — AI Agent Impact Tracker
 
-Living document tracking how AI agent developments expose gaps in the NIST AI Risk Management Framework.
+Living document tracking how AI agent developments expose gaps in the NIST AI Risk Management Framework [NIST-AI-RMF].
 
 ---
 
@@ -26,6 +26,14 @@ For managed harnesses (Managed Agents), accountability splits between the harnes
 
 ---
 
+## MEASURE 2.6 — Security & Resilience (Alignment Evidence)
+
+**Triggered by:** [Mythos System Card](../events/2026-04--project-glasswing.md) (April 2026) [GLASSWING-CARD-PDF]
+
+**Gap/finding:** The system card's white-box interpretability analysis (Section 4.5) demonstrates that SAE features and activation verbalizers can detect concerning model behaviors — "strategic manipulation," "security bypass," "snooping and stealthy investigation" — in real time during training. This is exactly the kind of tool-use monitoring that MEASURE 2.6 should specify but doesn't. The system card also documents the model hacking evaluation grading systems (Section 4.4.2), which means audit logging must capture all tool-call side effects, not just declared outputs — a requirement absent from MEASURE 2.6.
+
+---
+
 ## MAP 3.1 — Third-Party AI Risks
 
 **Triggered by:** [Anthropic v. OpenCode](../events/2026-03--anthropic-v-opencode.md) (March 2026)
@@ -37,3 +45,4 @@ For managed harnesses (Managed Agents), accountability splits between the harnes
 ---
 
 *Last updated: 2026-04-08*
+*Citation keys reference [SOURCES.md](../SOURCES.md).*

@@ -4,8 +4,8 @@
 2026-03-31 (hours after the Claude Code leak)
 
 ## Source
-- https://github.com/ultraworkers/claw-code
-- https://claw-code.codes/
+- [CLAW-CODE] https://github.com/ultraworkers/claw-code
+- [CLAW-CODE-SITE] https://claw-code.codes/
 
 ## What happened
 Hours after the Claude Code source leak, Sigrid Jin published Claw Code — a clean-room rewrite of the agent harness architecture in Rust and Python. No proprietary code. Independently audited. It hit 50K GitHub stars in 2 hours, one of the fastest accumulation rates GitHub has ever recorded.
@@ -23,14 +23,15 @@ The entire AI agent ecosystem. Claw Code proved that the harness pattern can be 
 - **SOC 2:** None directly
 - **HITRUST:** None directly
 - **HIPAA:** None directly
-- **ISO 42001:** Reinforces the need for harness-agnostic controls in Annex A.7 — the architecture is reproducible across implementations
+- **ISO 42001:** Reinforces the need for harness-agnostic controls in Annex A.7 — the architecture is reproducible across implementations [ISO-42001]
 - **NIST AI RMF:** None directly
 
 ## Key links
-- [Claw Code repo](https://github.com/ultraworkers/claw-code)
-- [Claw Code site](https://claw-code.codes/)
-- [Medium — Claw Code killed Claude Code?](https://medium.com/data-science-in-your-pocket/claw-code-killed-claude-code-02aab80b0838)
+- [Claw Code repo](https://github.com/ultraworkers/claw-code) [REPO-CLAW-CODE]
+- [Claw Code site](https://claw-code.codes/) [CLAW-CODE-SITE]
+- [Medium — Claw Code killed Claude Code?](https://medium.com/data-science-in-your-pocket/claw-code-killed-claude-code-02aab80b0838) [CLAW-CODE-MEDIUM]
 
 ---
 
 *Added: 2026-04-08*
+*Citation keys reference [SOURCES.md](../SOURCES.md).*
