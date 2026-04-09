@@ -1,6 +1,6 @@
 # AI Governance Watch
 
-> **This is independent research, not compliance advice.** The analysis here reflects one practitioner's interpretation of how recent AI developments intersect with governance frameworks (SOC 2, HIPAA, HITRUST, ISO 42001, NIST AI RMF). It is not endorsed by the AICPA, NIST, ISO, HITRUST Alliance, or HHS. Framework gap claims are the author's assessment — not audit findings. Do not use this as a substitute for qualified legal, compliance, or security counsel. Content was written with AI assistance (Claude, Anthropic) and may contain errors. Events are moving fast; verify claims against primary sources before acting on them. See [SOURCES.md](SOURCES.md) for the full bibliography, [repo-governance.md](controls/repo-governance.md) for content controls, and [RISKS.md](RISKS.md) for the full risk register.
+> **This is independent research, not compliance advice.** The analysis here reflects one practitioner's interpretation of how recent AI developments intersect with cybersecurity governance. Do not use this as a substitute for qualified legal, compliance, or security counsel. Content was written with AI assistance (Claude, Anthropic) and may contain errors. Events are moving fast; verify claims against primary sources before acting on them. See [SOURCES.md](SOURCES.md) for the full bibliography, [repo-governance.md](controls/repo-governance.md) for content controls, and [RISKS.md](RISKS.md) for the full risk register.
 
 ### Known risks to this repo ([full register](RISKS.md))
 
@@ -20,14 +20,14 @@ This list is not guaranteed to be comprehensive. This repo exists for personal p
 | [RR-10](RISKS.md#rr-10--temporal-compression-bias) Temporal compression | **HIGH** | Was there a cooling-off period before publishing? |
 | [RR-11](RISKS.md#rr-11--overstatement-of-gaps) Gap overstatement | MEDIUM | Would an auditor agree these are gaps? |
 
-Ongoing research tracking how AI agent developments affect cybersecurity governance frameworks. Focused on the agent harness ecosystem, Project Glasswing, and what both mean for SOC 2, HITRUST, HIPAA, ISO 42001, and NIST AI RMF.
+Ongoing research tracking how AI agent developments affect cybersecurity governance. Focused on the agent harness ecosystem, Project Glasswing, and what both mean for the "reasonable security" standard.
 
 ---
 
 ## Contents
 
 ### Events
-Individual briefs on key developments, each with framework impact analysis.
+Individual briefs on key developments.
 
 - [OpenClaw Goes Viral](events/2026-01--openclaw-viral.md) — first open-source harness, fastest-growing GitHub repo ever
 - [Anthropic v. OpenCode](events/2026-03--anthropic-v-opencode.md) — Anthropic sues to protect the harness
@@ -52,20 +52,10 @@ Technical workpapers analyzing the [Mythos Preview System Card](https://red.anth
 Deeper pieces connecting events to governance implications.
 
 - [Agent Harness Architecture](analysis/agent-harness-architecture.md) — what a harness is, the converging pattern
-- [The Harness Governance Gap](analysis/harness-governance-gap.md) — where ISO 42001, NIST AI RMF, and SOC 2 fall short
+- [The Harness Governance Gap](analysis/harness-governance-gap.md) — the orchestration layer that frameworks don't address
 - [The Reasonable Security Baseline Just Moved](analysis/reasonable-security-baseline.md) — FTC precedent, insurance, the shifting standard
 
-### Frameworks
-Living documents that accumulate findings per compliance framework.
-
-- [SOC 2](frameworks/soc2.md) — CC3.2, CC4.1, CC6.1, CC7.1 findings
-- [HITRUST](frameworks/hitrust.md) — 07.d, 01.v, AI Security Assessment
-- [HIPAA](frameworks/hipaa.md) — §164.308(a)(1), BAA for managed harnesses
-- [ISO 42001](frameworks/iso42001.md) — 8.2, A.5, A.7 gaps
-- [NIST AI RMF](frameworks/nist-ai-rmf.md) — GOVERN 2.1, MEASURE 2.6, MAP 3.1
-
 ### Controls
-- [Harness Risk & Control Matrix (SOC 2 Mapping)](controls/harness-risk-matrix.md)
 - [Repository Governance Controls](controls/repo-governance.md) — how this repo governs its own content: sourcing, review, corrections, bias
 - [Repository Risk Register](RISKS.md) — running list of risks to this repo's credibility, with current severity and open questions
 
@@ -95,19 +85,18 @@ In 10 weeks, the agent harness — the orchestration layer that gives AI models 
 
 **April 8 — The headlines hit and the budget drops.** Glasswing dominates NBC [GLASSWING-NBC], Fortune [GLASSWING-FORTUNE], CyberScoop [GLASSWING-CYBERSCOOP]. CrowdStrike and Palo Alto Networks stocks surge [GLASSWING-CROWDSTRIKE]. Former national security officials push Section 702 FISA renewal [FISA-702]. The same day, the Pentagon's FY2027 budget proposes massive AI warfare expansion — while cutting CISA by $707M [FY2027-BUDGET]. The federal government is expanding AI offense and reducing civilian defense at the same moment.
 
-**Two gaps converge.** The harness is now a visible, understood, reproducible, purchasable thing — and the governance frameworks (ISO 42001 [ISO-42001], NIST AI RMF [NIST-AI-RMF], SOC 2 TSC [SOC2-TSC]) don't address it. At the same time, the model inside the harness just proved that the "reasonable security" baseline has shifted [FTC-WYNDHAM] — and the frameworks haven't caught up to that either. Both gaps land on the same desk.
+**Two gaps converge.** The harness is now a visible, understood, reproducible, purchasable thing — and the governance frameworks don't address it. At the same time, the model inside the harness just proved that the "reasonable security" baseline has shifted [FTC-WYNDHAM] — and the frameworks haven't caught up to that either. Both gaps land on the same desk.
 
 ---
 
 ## How this repo works
 
-- **Events** are templated briefs — one per development, with standardized fields for date, source, impact, and framework mapping. See [templates/event-brief.md](templates/event-brief.md).
+- **Events** are templated briefs — one per development, with standardized fields for date, source, and impact. See [templates/event-brief.md](templates/event-brief.md).
 - **Analysis** pieces synthesize across events to surface governance implications.
-- **Framework** docs are living trackers — findings accumulate as new events occur. See [templates/framework-update.md](templates/framework-update.md).
 - **System card workpapers** (`system-card/`) are self-contained technical analyses — one per major section of the Mythos system card, each standalone.
-- **Controls** are mappings of harness-level risks to specific framework criteria.
+- **Controls** document how this repo governs its own content.
 
-New events get added as they happen. Framework docs get updated when an event affects a specific control or section. The CHANGELOG tracks what changed and when.
+New events get added as they happen. The CHANGELOG tracks what changed and when.
 
 ---
 

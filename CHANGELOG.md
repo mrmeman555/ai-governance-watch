@@ -4,6 +4,19 @@ All notable updates to this repository.
 
 ---
 
+## 2026-04-09 — Remove framework gap claims (cooling-off period)
+
+- Deleted 5 framework trackers: `frameworks/soc2.md`, `frameworks/hitrust.md`, `frameworks/hipaa.md`, `frameworks/iso42001.md`, `frameworks/nist-ai-rmf.md`
+- Deleted `controls/harness-risk-matrix.md` (SOC 2-mapped control matrix)
+- Removed "Governance Implications" sections from all 8 system card workpapers
+- Removed "Framework impact" sections from all 6 event briefs
+- Removed specific clause/control references (CC3.2, CC4.1, CC6.1, CC7.1, A.7, MEASURE 2.6, §164.308, 07.d) from analysis pieces
+- Kept narrative analysis (harness governance gap thesis, reasonable security baseline, FTC precedent, Cranium, Mythos evidence)
+- Updated README, SOURCES.md, event brief template
+- Rationale: honoring RR-10 (temporal compression bias) — framework gap claims were interpretive judgments written in a single session without cooling-off review
+
+---
+
 ## 2026-04-08 — System card workpapers
 
 - Created `system-card/` directory with 8 self-contained workpapers analyzing the Mythos Preview system card

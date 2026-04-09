@@ -48,15 +48,6 @@ Mythos Preview discovered thousands of previously unknown high-severity vulnerab
 
 The human factor: *"Engineers at Anthropic with no formal security training have asked Mythos Preview to find remote code execution vulnerabilities overnight, and woken up the following morning to a complete, working exploit."*
 
-## Governance implications
-
-These findings are the core evidence for the "reasonable security baseline" shift documented in [analysis/reasonable-security-baseline.md](../analysis/reasonable-security-baseline.md):
-
-- **SOC 2 CC3.2 (Risk Assessment):** If an AI can find a 27-year-old bug in hours, traditional "low" risk ratings for legacy code are no longer defensible. See [frameworks/soc2.md](../frameworks/soc2.md).
-- **SOC 2 CC7.1 (Vulnerability Management):** Detection capabilities limited to known-CVE scanning miss what Mythos found. See [frameworks/soc2.md](../frameworks/soc2.md).
-- **HIPAA §164.308(a)(1):** Risk analysis that doesn't account for AI-discoverable vulnerabilities in ePHI systems is arguably incomplete. See [frameworks/hipaa.md](../frameworks/hipaa.md).
-- **HITRUST 07.d:** Technical vulnerability management may need to include AI-augmented discovery as a standard input. See [frameworks/hitrust.md](../frameworks/hitrust.md).
-
 ## Key data points
 
 - 27-year-old OpenBSD bug — remote DoS via signed integer overflow in TCP SACK

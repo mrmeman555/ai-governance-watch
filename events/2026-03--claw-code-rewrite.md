@@ -19,13 +19,6 @@ The clean-room nature also made it untouchable by DMCA — while Anthropic was f
 ## Who's affected
 The entire AI agent ecosystem. Claw Code proved that the harness pattern can be independently reproduced, which means governance frameworks need to address the pattern itself — not specific vendor implementations.
 
-## Framework impact
-- **SOC 2:** None directly
-- **HITRUST:** None directly
-- **HIPAA:** None directly
-- **ISO 42001:** Reinforces the need for harness-agnostic controls in Annex A.7 — the architecture is reproducible across implementations [ISO-42001]
-- **NIST AI RMF:** None directly
-
 ## Key links
 - [Claw Code repo](https://github.com/ultraworkers/claw-code) [REPO-CLAW-CODE]
 - [Claw Code site](https://claw-code.codes/) [CLAW-CODE-SITE]

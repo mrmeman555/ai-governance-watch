@@ -49,14 +49,6 @@ One documented example: a **KASLR bypass** that comes *"not from an out-of-bound
 
 This is a design-level vulnerability — the kernel intentionally exposes the pointer, not realizing it undermines KASLR. Finding this requires understanding the *security implications* of a deliberate design choice, not just finding a coding error.
 
-## Governance implications
-
-These vulnerability classes have different governance implications than memory corruption:
-
-- **Authentication bypasses** directly affect access control frameworks. For SOC 2 CC6.1 (Logical Access) and CC6.3 (User Identity), the existence of AI-discoverable auth bypasses means access control testing needs to go beyond configuration review. See [frameworks/soc2.md](../frameworks/soc2.md).
-- **Crypto weaknesses** affect the foundation of data protection. For HIPAA §164.312(e)(1) (Transmission Security), the existence of TLS/AES-GCM implementation flaws means encryption-in-transit is not a complete mitigation by itself. See [frameworks/hipaa.md](../frameworks/hipaa.md).
-- **Logic bugs are fuzzer-invisible.** Organizations that rely solely on automated scanning and fuzzing for vulnerability management are missing an entire vulnerability class. This affects how CC7.1 (Vulnerability Management) controls should be scoped.
-
 ## Key data points
 
 - Logic bugs require semantic code understanding — fuzzers cannot find them

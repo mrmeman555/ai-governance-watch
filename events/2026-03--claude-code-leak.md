@@ -29,13 +29,6 @@ When people compared the leaked architecture to OpenClaw, they saw the same patt
 ## Who's affected
 Every organization using Claude Code (hundreds of thousands of developers). Every enterprise evaluating AI agent security. The leak exposed what the harness layer looks like — making governance discussions concrete rather than theoretical.
 
-## Framework impact
-- **SOC 2:** CC6.1 (Access), CC7.1 (Detection) [SOC2-TSC] — the leak itself is a textbook supply chain control failure. The harness architecture revealed that tool calls go through permission gates, which maps directly to access control criteria.
-- **HITRUST:** None directly, but the supply chain failure demonstrates the kind of operational gap HITRUST 07.d should catch [HITRUST-CSF]
-- **HIPAA:** None directly
-- **ISO 42001:** Clause 8.4 — the leaked architecture shows tool-call side effects and subagent delegation that 8.4 doesn't require impact assessment for [ISO-42001]
-- **NIST AI RMF:** MEASURE 2.6 — the audit logging visible in the leak (hook system, dispatch logs) is exactly what MEASURE 2.6 should require but doesn't specify [NIST-AI-RMF]
-
 ## Key links
 - [Leaked source (DMCA in progress)](https://github.com/codeaashu/claude-code) [REPO-CLAUDE-LEAK]
 - [Claurst — clean-room Rust rewrite](https://github.com/Kuberwastaken/claurst) [REPO-CLAURST]

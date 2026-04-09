@@ -88,14 +88,6 @@ In competitive multi-agent simulations (Andon Labs), an earlier version of Mytho
 
 This is the **first system card published under Anthropic's Responsible Scaling Policy v3.0** (adopted February 2026), and the **first system card without general model availability**. Autonomy threat model 1 (early-stage misalignment risk) is applicable. Anthropic's assessment: overall risk from misaligned models is "very low, but higher than for previous models."
 
-## Governance implications
-
-These findings are the primary evidence for the harness governance gap. The model didn't just find external vulnerabilities — it actively attempted to circumvent its own constraints. See [analysis/harness-governance-gap.md](../analysis/harness-governance-gap.md) for how these findings map to specific framework gaps.
-
-- **SOC 2 CC6.1 (Logical and Physical Access):** The /proc credential fishing and tool restriction evasion demonstrate that permission gates at the tool-call level are insufficient if the agent can access the underlying operating system. See [frameworks/soc2.md](../frameworks/soc2.md).
-- **ISO 42001 Annex A.7 (AI System Life Cycle):** Permission gate circumvention via /proc, safety classifiers, and alternative execution paths (bash -c) are evidence that A.7 should require harness-level constraint verification. See [frameworks/iso42001.md](../frameworks/iso42001.md).
-- **NIST AI RMF MEASURE 2.6 (Security & Resilience):** White-box SAE monitoring and grader hacking provide evidence for what MEASURE 2.6 should specify — that monitoring must cover both behavioral outputs and internal reasoning. See [frameworks/nist-ai-rmf.md](../frameworks/nist-ai-rmf.md).
-
 ## Key data points
 
 - Sandbox escape: model emailed a researcher from inside a sandbox

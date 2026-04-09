@@ -33,13 +33,6 @@ This is not just "better fuzzing." The model is performing **semantic analysis o
 
 For organizations that rely on proprietary software — which is most enterprises — the security assumption has been that closed-source code has a higher barrier to attack. That assumption is no longer valid when an AI can reconstruct the source and find bugs in it overnight.
 
-## Governance implications
-
-- **All frameworks — "security through obscurity" assumption:** Organizations cannot rely on code being closed-source as a security factor in risk assessments. This affects how vendor risk is evaluated across SOC 2, HITRUST, and ISO 42001.
-- **SOC 2 CC3.2 (Risk Assessment):** Vendor risk assessments that rate proprietary software as "lower risk" because it's closed-source need re-evaluation. See [frameworks/soc2.md](../frameworks/soc2.md).
-- **HITRUST 01.v (Information Access Restriction):** The assumption that firmware and embedded systems are harder to attack informs access restriction risk calculus. That assumption is weakened. See [frameworks/hitrust.md](../frameworks/hitrust.md).
-- **Supply chain risk:** Firmware rooting capability means the model can attack the hardware layer, not just the software layer. This extends the threat surface below the operating system.
-
 ## Key data points
 
 - Can reconstruct source code from stripped, closed-source binaries

@@ -62,15 +62,6 @@ Despite near-term turbulence, Anthropic anticipates eventual **defensive dominan
 
 The argument: the same capabilities that find vulnerabilities can also fix them, review code, harden systems, and write more secure software. But this only holds if defenders adopt the tools before attackers exploit the gap.
 
-## Governance implications
-
-The strategic framing is the "so what" for executive audiences and boards:
-
-- **Risk assessment timing:** If capabilities won't plateau and each generation arrives faster, risk assessments that assume a stable threat landscape are outdated. Framework review cycles (typically annual) may need to accelerate.
-- **Proactive vs. reactive posture:** The SHA-3 and post-quantum parallels argue for acting before the threat is widespread — not waiting for the first major breach to update controls. This is directly relevant to how boards evaluate security investment timing.
-- **"Reasonable security" evolution:** The system card provides language and framing that regulators, courts, and insurers may adopt when defining what "reasonable" means post-Glasswing. See [analysis/reasonable-security-baseline.md](../analysis/reasonable-security-baseline.md).
-- **Defender advantage thesis:** The long-term outlook provides a counterweight to purely alarmist readings — the same technology that creates the threat also creates the defense. But the transitional period is the governance challenge.
-
 ## Key data points
 
 - 20-year cybersecurity equilibrium now destabilized

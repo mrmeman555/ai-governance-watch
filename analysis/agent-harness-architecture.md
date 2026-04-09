@@ -19,7 +19,7 @@ Every agent harness has the same core components:
 | **Orchestration** | Multi-step planning, subagent dispatch, task decomposition |
 | **Audit / logging** | What gets recorded — tool calls, decisions, outputs, provenance |
 
-The permission layer and audit logging are where **governance** lives. This is the layer that ISO 42001 [ISO-42001], NIST AI RMF [NIST-AI-RMF], and every future AI governance framework will need to address — and almost none of them do yet.
+The permission layer and audit logging are where **governance** lives. This is the layer that every AI governance framework will need to address — and almost none of them do yet.
 
 ## The Convergence
 
@@ -40,8 +40,6 @@ Anthropic confirmed this interpretation by [launching Managed Agents](../events/
 The model is the brain. The harness is everything else. The harness is where governance lives. The harness is where security controls go. The harness is what most people don't know exists.
 
 For a detailed analysis of where current frameworks fall short on harness governance, see [harness-governance-gap.md](harness-governance-gap.md).
-
-For a SOC 2-mapped control matrix targeting harness-level risks, see [harness-risk-matrix.md](../controls/harness-risk-matrix.md).
 
 ---
 

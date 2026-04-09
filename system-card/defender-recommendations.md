@@ -66,15 +66,6 @@ Detection teams face unprecedented alert volumes. Models should handle:
 - **Proactive hunting:** Model-driven threat hunting
 - **Incident support:** Note-taking, artifact capture, investigation thread management, postmortem drafting
 
-## Governance implications
-
-These recommendations provide **Anthropic's own baseline** for what "reasonable security" looks like in the post-Glasswing environment. This has direct implications for how frameworks should evolve:
-
-- **HITRUST 07.d (Technical Vulnerability Management):** Anthropic's recommendation to use AI-augmented discovery as standard practice provides evidence for what 07.d should require. See [frameworks/hitrust.md](../frameworks/hitrust.md).
-- **SOC 2 CC4.1 (Monitoring):** Recommendation 1 (use frontier models now) and the incident response automation guidance directly inform what "effective" monitoring means. See [frameworks/soc2.md](../frameworks/soc2.md).
-- **SOC 2 CC7.1 (Vulnerability Management):** Recommendations 3–5 (accelerate patches, modernize distribution, update disclosure policies) describe the new operational baseline for vulnerability management. See [frameworks/soc2.md](../frameworks/soc2.md).
-- **Reasonable security standard:** These recommendations from the discoverer of the vulnerabilities may inform what courts and regulators consider "reasonable" in future enforcement actions. See [analysis/reasonable-security-baseline.md](../analysis/reasonable-security-baseline.md).
-
 ## Key data points
 
 - 6 recommendations + incident response guidance

@@ -14,10 +14,6 @@
 
 {The substantive content — technical details, quotes, data. Use section headers as needed.}
 
-## Governance implications
-
-{What this means for compliance frameworks. Link to relevant framework trackers in `frameworks/`.}
-
 ## Key data points
 
 {Bulleted list of the most important numbers/facts for quick reference.}

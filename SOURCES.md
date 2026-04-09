@@ -16,7 +16,7 @@ https://www.iso.org/standard/42001
 Referenced sections: 8.2 (AI Risk Assessment), 8.4 (AI System Impact Assessment), Annex A.5 (Data & Information), Annex A.7 (Data for AI Systems).
 *Note: Clause 8.4 covers impact assessment (not 8.2 as sometimes cited). Annex numbering should be verified against the purchased standard — secondary sources vary.*
 See also: [AWS blog on ISO 42001](https://aws.amazon.com/blogs/security/ai-lifecycle-risk-management-iso-iec-420012023-for-ai-governance/) | [Bastion guide to Annex A](https://bastion.tech/learn/iso42001/annex-a-controls/)
-*Cited in: frameworks/iso42001.md, analysis/harness-governance-gap.md, README.md*
+*Cited in: analysis/harness-governance-gap.md, README.md*
 
 **[NIST-AI-RMF]** NIST AI Risk Management Framework (AI RMF 1.0). NIST AI 100-1.
 National Institute of Standards and Technology, January 2023.
@@ -25,29 +25,29 @@ Full document: https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf
 Playbook: https://airc.nist.gov/airmf-resources/playbook/
 Referenced sections: GOVERN 2.1 (Roles and Responsibilities), MEASURE 2.6 (Security & Resilience), MAP 3.1 (Third-Party AI Risks).
 *Note: Exact subcategory text is in Tables 1-4, pp. 25-32 of NIST AI 100-1.*
-*Cited in: frameworks/nist-ai-rmf.md, analysis/harness-governance-gap.md, README.md*
+*Cited in: analysis/harness-governance-gap.md, README.md*
 
 **[SOC2-TSC]** 2017 Trust Services Criteria for Security, Availability, Processing Integrity, Confidentiality, and Privacy (With Revised Points of Focus — 2022).
 AICPA & CIMA, Assurance Services Executive Committee (ASEC).
 https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022
 Referenced controls: CC2.1 (COSO Principle 13 — Communication), CC3.2 (COSO Principle 7 — Risk Assessment), CC4.1 (COSO Principle 16 — Monitoring), CC6.1 (Logical Access), CC6.3 (Role-Based Access), CC7.1 (Vulnerability Management), CC7.2 (Security Monitoring), A1.2 (Availability — Recovery).
-*Cited in: frameworks/soc2.md, controls/harness-risk-matrix.md, analysis/reasonable-security-baseline.md, README.md*
+*Cited in: analysis/reasonable-security-baseline.md, README.md*
 
 **[HITRUST-CSF]** HITRUST Common Security Framework.
 HITRUST Alliance.
 https://hitrustalliance.net/product-tool/hitrust-csf/
 Referenced controls: 07.d (Technical Vulnerability Management), 01.v (Information Access Restriction).
-*Cited in: frameworks/hitrust.md, analysis/reasonable-security-baseline.md*
+*Cited in: analysis/reasonable-security-baseline.md*
 
 **[HITRUST-AI]** HITRUST AI Security Assessment — 51 AI-specific controls.
 HITRUST Alliance, late 2024.
 https://hitrustalliance.net/assessments-and-certifications/aisecurityassessment
-*Cited in: frameworks/hitrust.md, analysis/harness-governance-gap.md, Steadfast Business Model*
+*Cited in: analysis/harness-governance-gap.md, Steadfast Business Model*
 
 **[HITRUST-AI-ISO]** "HITRUST AI Security Assessment: A Path to ISO 42001."
 Schellman (blog), 2025.
 https://www.schellman.com/blog/ai-services/hitrust-ai-security-assessment-path-to-iso-42001
-*Cited in: frameworks/hitrust.md*
+*Cited in: (reference material)*
 
 **[HIPAA-SEC]** HIPAA Security Rule — 45 C.F.R. Part 164, Subpart C.
 U.S. Department of Health and Human Services.
@@ -55,7 +55,7 @@ Overview: https://www.hhs.gov/hipaa/for-professionals/security/index.html
 Risk Analysis guidance: https://www.hhs.gov/hipaa/for-professionals/security/guidance/guidance-risk-analysis/index.html
 Regulation text: https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308
 Referenced section: §164.308(a)(1)(ii)(A) — Risk Analysis requirement.
-*Cited in: frameworks/hipaa.md, analysis/reasonable-security-baseline.md*
+*Cited in: analysis/reasonable-security-baseline.md*
 
 **[CMMC]** Cybersecurity Maturity Model Certification (CMMC 2.0). 32 C.F.R. Part 170.
 U.S. Department of Defense, Chief Information Officer. Final rule effective December 16, 2024.
@@ -166,13 +166,13 @@ https://www.anthropic.com/glasswing
 Anthropic, April 7, 2026. 244 pages.
 https://red.anthropic.com/2026/mythos-preview/
 Key findings: 27-year-old OpenBSD vuln, 16-year-old FFmpeg vuln, 17-year-old FreeBSD vuln (CVE-2026-4747), Firefox 147 (181 exploits vs. 2 for Opus 4.6), OSS-Fuzz (595 crashes, 10 control flow hijacks). Cost: $50–$2,000/exploit.
-*Cited in: events/2026-04--project-glasswing.md, analysis/reasonable-security-baseline.md, frameworks/soc2.md, system-card/evaluation-methodology.md, system-card/zero-day-discovery.md, system-card/exploit-development.md, system-card/logic-and-crypto-vulns.md, system-card/reverse-engineering.md, system-card/alignment-assessment.md, system-card/defender-recommendations.md, system-card/strategic-context.md, README.md*
+*Cited in: events/2026-04--project-glasswing.md, analysis/reasonable-security-baseline.md, system-card/evaluation-methodology.md, system-card/zero-day-discovery.md, system-card/exploit-development.md, system-card/logic-and-crypto-vulns.md, system-card/reverse-engineering.md, system-card/alignment-assessment.md, system-card/defender-recommendations.md, system-card/strategic-context.md, README.md*
 
 **[GLASSWING-CARD-PDF]** System Card: Claude Mythos Preview — full 244-page PDF.
 Anthropic, April 7, 2026.
 https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf
 Contains full alignment assessment (Section 4): sandbox escape, /proc credential fishing, safety classifier circumvention, grader hacking, sandbagging, white-box interpretability (SAE features for "strategic manipulation," "security bypass," "guilt and shame"), SHADE-Arena stealth rates, destructive action rates. RSP v3.0 context. Autonomy threat model 1 applicable. Anthropic: "We find it alarming that the world looks on track to proceed rapidly to developing superhuman systems without stronger mechanisms in place for ensuring adequate safety."
-*Cited in: events/2026-04--project-glasswing.md, analysis/harness-governance-gap.md, frameworks/iso42001.md, frameworks/nist-ai-rmf.md, frameworks/soc2.md, system-card/evaluation-methodology.md, system-card/zero-day-discovery.md, system-card/exploit-development.md, system-card/logic-and-crypto-vulns.md, system-card/reverse-engineering.md, system-card/alignment-assessment.md, system-card/defender-recommendations.md, system-card/strategic-context.md*
+*Cited in: events/2026-04--project-glasswing.md, analysis/harness-governance-gap.md, system-card/evaluation-methodology.md, system-card/zero-day-discovery.md, system-card/exploit-development.md, system-card/logic-and-crypto-vulns.md, system-card/reverse-engineering.md, system-card/alignment-assessment.md, system-card/defender-recommendations.md, system-card/strategic-context.md*
 
 **[GLASSWING-CROWDSTRIKE]** "CrowdStrike: Founding Member of Anthropic Mythos Frontier Model to Secure AI."
 CrowdStrike blog, April 7, 2026.

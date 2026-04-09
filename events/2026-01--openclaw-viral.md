@@ -23,13 +23,6 @@ Before OpenClaw, agent harnesses were proprietary black boxes locked inside Anth
 ## Who's affected
 Every organization deploying AI agents. OpenClaw demonstrated that the orchestration layer is a standard, reproducible pattern — not proprietary technology. This means governance frameworks need to address the harness layer generically, not vendor-by-vendor.
 
-## Framework impact
-- **SOC 2:** The tool system and permission layer in OpenClaw map to CC6.1 (Access), CC7.1 (Detection), CC7.2 (Monitoring)
-- **HITRUST:** None identified (yet)
-- **HIPAA:** None identified (yet)
-- **ISO 42001:** Annex A.7 (AI System Life Cycle) doesn't address harness-level permission gates [ISO-42001]
-- **NIST AI RMF:** GOVERN 2.1 doesn't define accountability for subagents [NIST-AI-RMF]
-
 ## Key links
 - [OpenClaw repo](https://github.com/openclaw/openclaw) [REPO-OPENCLAW]
 - [Star History — OpenClaw surpasses React](https://www.star-history.com/blog/openclaw-surpasses-react-most-starred-software) [OPENCLAW-STARS]

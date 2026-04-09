@@ -81,14 +81,6 @@ Anthropic follows coordinated vulnerability disclosure (CVD):
 | Linux kernel exploit chains | — | Under $2,000 per sophisticated chain |
 | General range | — | $50–$2,000 per individual exploit |
 
-## Governance implications
-
-The evaluation methodology is directly relevant to **how organizations should assess the credibility of these findings** and what it means for their own security programs:
-
-- **SOC 2 CC4.1 (Monitoring):** The cost and scale data ($50–$2,000 per exploit, 7,000 entry points automated) establishes what "effective" monitoring now looks like. See [frameworks/soc2.md](../frameworks/soc2.md).
-- **HITRUST 07.d (Technical Vulnerability Management):** The 89% human-model severity agreement rate and the validation agent pattern suggest AI-augmented discovery could become a standard input to vulnerability management programs. See [frameworks/hitrust.md](../frameworks/hitrust.md).
-- **All frameworks:** The responsible disclosure backlog (>99% unpatched) means the vulnerability landscape is about to shift dramatically as disclosure windows close.
-
 ## Key data points
 
 - ~7,000 entry points across ~1,000 OSS-Fuzz repositories

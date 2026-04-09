@@ -2,7 +2,7 @@
 
 ## The Shift
 
-Every compliance framework — SOC 2 [SOC2-TSC], HIPAA [HIPAA-SEC], HITRUST [HITRUST-CSF], ISO 27001, CMMC [CMMC] — requires organizations to implement "reasonable" or "proportionate" security measures. That standard is benchmarked against prevailing industry practices.
+Every compliance framework requires organizations to implement "reasonable" or "proportionate" security measures. That standard is benchmarked against prevailing industry practices.
 
 [Project Glasswing](../events/2026-04--project-glasswing.md) changed the benchmark. When an AI model can find vulnerabilities that survived 27 years of expert human review and 5 million automated test executions, the definition of what constitutes adequate vulnerability management has shifted. Assessments completed before April 2026 are benchmarked against a demonstrably lower standard.
 
@@ -20,7 +20,7 @@ The [244-page system card](https://red.anthropic.com/2026/mythos-preview/) [GLAS
 
 ## The CISA Budget Signal
 
-On April 8 — one day after Glasswing launched — the Pentagon's FY2027 budget proposal hit [FY2027-BUDGET]: massive expansion in autonomous warfare and AI adoption, alongside a $707M cut to CISA to refocus it on protecting critical infrastructure. The federal government is expanding AI offense while reducing the agency responsible for civilian defense. For GRC practitioners, this signals that the private sector should expect less federal support for vulnerability coordination, not more — at the same moment when AI is accelerating the threat.
+On April 8 — one day after Glasswing launched — the Pentagon's FY2027 budget proposal hit [FY2027-BUDGET]: massive expansion in autonomous warfare and AI adoption, alongside a $707M cut to CISA to refocus it on protecting critical infrastructure. The federal government is expanding AI offense while reducing the agency responsible for civilian defense. For practitioners, this signals that the private sector should expect less federal support for vulnerability coordination, not more — at the same moment when AI is accelerating the threat.
 
 ## Legal Precedent — FTC "Reasonable Security"
 
@@ -38,19 +38,9 @@ Current PCAOB and AICPA guidance emphasizes auditor independence and warns again
 
 ## The Supply Chain Irony
 
-Worth noting: the event that made Glasswing publicly visible happened because of a supply chain failure at Anthropic itself. On March 31, a [misconfigured npm package](../events/2026-03--claude-code-leak.md) exposed the full source architecture of Claude Code — an AI agent harness used by hundreds of thousands of developers. A missing line in a config file. That's the kind of operational security gap that SOC 2 and ISO 27001 controls are supposed to prevent.
+Worth noting: the event that made Glasswing publicly visible happened because of a supply chain failure at Anthropic itself. On March 31, a [misconfigured npm package](../events/2026-03--claude-code-leak.md) exposed the full source architecture of Claude Code — an AI agent harness used by hundreds of thousands of developers. A missing line in a config file. That's the kind of operational security gap that controls are supposed to prevent.
 
 The irony is hard to miss: the company building the most powerful vulnerability detection AI in history was itself vulnerable to a packaging misconfiguration.
-
-## vCISO Advisory Angle
-
-This opens up a few natural conversations with clients:
-
-- Most vulnerability management programs are scoped against known CVEs. Glasswing exposed a class of risk that doesn't live in any database yet.
-- Organizations don't need to adopt AI-augmented scanning today, but documenting the risk and having a position on it seems like it'll matter soon.
-- When Mythos-class tools become commercially available (12-18 months), clients who already have a policy position will be ahead of those scrambling to catch up.
-
-Potential service areas this touches: AI-augmented assessment methodology, policy updates for AI-assisted vulnerability management, client readiness assessments, gap analysis against the emerging baseline.
 
 ---
 

@@ -50,13 +50,6 @@ The timing is hard to ignore: the Pentagon is expanding AI offense while cutting
 ## Who's affected
 Every organization that depends on software. The vulnerabilities Mythos found exist in foundational infrastructure (operating systems, browsers, media libraries) that virtually every enterprise runs. More specifically: GRC consulting firms, assessors, vCISOs, and any organization subject to security compliance frameworks.
 
-## Framework impact
-- **SOC 2:** CC3.2 (Risk Assessment) — legacy code risk ratings no longer defensible. CC4.1 (Monitoring) — "periodic" scanning may not meet "effective" threshold. CC7.1 (Vulnerability Management) — must expand beyond known-CVE remediation. [SOC2-TSC]
-- **HITRUST:** 07.d (Technical Vulnerability Management) — may need to include AI-augmented discovery as a standard input. 01.v (Information Access Restriction) — zero-day exposure affects access control risk calculus. [HITRUST-CSF]
-- **HIPAA:** §164.308(a)(1) — risk analysis that doesn't account for AI-discoverable vulnerabilities in ePHI systems is arguably incomplete. [HIPAA-SEC]
-- **ISO 42001:** None directly (Glasswing is about what AI finds, not AI governance itself)
-- **NIST AI RMF:** None directly
-
 ## Alignment assessment (system card Section 4)
 
 The 244-page system card [GLASSWING-CARD-PDF] includes the most detailed alignment evaluation ever published for a frontier model. Mythos is **"the best-aligned of any model that we have trained to date by essentially all available measures"** while simultaneously carrying **"the greatest alignment-related risk of any model released to date."**
