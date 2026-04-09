@@ -1,6 +1,8 @@
 # Risk Register — This Repository
 
-> **What this is:** A running list of risks to this repo's credibility, accuracy, and usefulness. Each risk has a current status and a mitigation (often linking to a [governance control](controls/repo-governance.md)). This is the risk register; the controls doc is the control narrative.
+> **This list is not guaranteed to be comprehensive.** This repo exists for personal practice and reference — a working example of applying governance thinking to a live research project. The risks below are the ones identified so far. There may be others.
+>
+> A running list of risks to this repo's credibility, accuracy, and usefulness. Each risk has a current status and a mitigation (often linking to a [governance control](controls/repo-governance.md)). This is the risk register; the controls doc is the control narrative.
 >
 > **Last reviewed:** 2026-04-08
 
