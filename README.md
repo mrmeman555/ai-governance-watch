@@ -2,6 +2,11 @@
 
 > **This is independent research, not compliance advice.** Content was written with AI assistance (Claude, Anthropic) and may contain errors. Verify claims against primary sources before acting on them. See [SOURCES.md](SOURCES.md) for the full bibliography.
 
+| Date | Latest |
+|------|--------|
+| Apr 13, 2026 | [SANS/CSA/OWASP Mythos-Ready Briefing](events/2026-04--sans-csa-owasp-mythos-briefing.md) — 60+ practitioners including former CISA Director respond to Glasswing; explicitly shifts "reasonable defensive effort" standard [MYTHOS-BRIEFING] |
+| Apr 7, 2026 | [Project Glasswing](events/2026-04--project-glasswing.md) — Anthropic deploys Mythos to ~50 orgs; 244-page system card documents thousands of zero-days, $50–$2,000/exploit, grader hacking [GLASSWING] |
+
 Ongoing research tracking how AI agent developments affect cybersecurity governance — centered on [Project Glasswing](events/2026-04--project-glasswing.md), the practitioner response it triggered, the agent harness ecosystem, and what all three mean for the "reasonable security" standard.
 
 ---
