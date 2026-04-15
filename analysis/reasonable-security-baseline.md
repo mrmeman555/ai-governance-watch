@@ -42,6 +42,18 @@ Project Glasswing is restricted to ~50 partner organizations (AWS, Apple, Google
 
 Anthropic does not plan to make Mythos Preview generally available but aims to "enable users to safely deploy Mythos-class models at scale" with safeguards in an upcoming Opus model. Innovaiden estimates a 12-18 month capability gap before Mythos-class models are broadly accessible. [INNOVAIDEN-GLASSWING]
 
+## Practitioner corroboration (April 14, 2026)
+
+On April 14, SANS Institute, the Cloud Security Alliance, [un]prompted, and the OWASP GenAI Security Project published *"The AI Vulnerability Storm: Building a Mythos-Ready Security Program"* — a 30-page strategy briefing reviewed by 250+ CISOs and co-authored by former CISA Director Jen Easterly, former National Cyber Director Chris Inglis, and Google CISO Phil Venables, among others. [MYTHOS-BRIEFING]
+
+Row 12 of the briefing's risk register states the argument this analysis makes from first principles:
+
+> "When AI can find vulnerabilities at accessible cost, the standard for what constitutes reasonable defensive effort shifts, creating direct governance and liability exposure for organizations that do not adapt." [MYTHOS-BRIEFING]
+
+The EU AI Act is cited as the near-term enforcement trigger (effective August 2026). The briefing is the first primary-source practitioner document to articulate the Wyndham-to-Mythos cost-benefit shift as an active governance and liability risk — not a theoretical future. See the [event brief](../events/2026-04--sans-csa-owasp-mythos-briefing.md) for full details.
+
+---
+
 ## The supply chain context
 
 The event that made Glasswing publicly visible followed a supply chain failure at Anthropic itself. On March 31, a [misconfigured npm package](../events/2026-03--claude-code-leak.md) exposed 513,000 lines of Claude Code — an AI agent harness used by hundreds of thousands of developers. Boris Cherny (Anthropic head of Claude Code) described it as "a plain developer error" — a missing `.npmignore` entry for Bun-generated source maps. [DMCA-ANTHROPIC] [CLAUDE-LEAK-TECHCRUNCH]

@@ -4,7 +4,16 @@ All notable updates to this repository.
 
 ---
 
-## 2026-04-09 — New analysis: Disclosure and Deployment Arrived Together
+## 2026-04-14 — New event: SANS/CSA/OWASP Mythos-Ready Security Briefing
+
+- Added `events/2026-04--sans-csa-owasp-mythos-briefing.md` — event brief for the emergency strategy briefing released today by SANS Institute, Cloud Security Alliance, [un]prompted, and the OWASP GenAI Security Project. Co-authored by former CISA Director Jen Easterly, former National Cyber Director Chris Inglis, Google CISO Phil Venables, and 60+ others; reviewed by 250+ CISOs. Direct link to 30-page PDF at `https://labs.cloudsecurityalliance.org/mythos-ciso/`.
+- Updated `analysis/reasonable-security-baseline.md` — added "Practitioner Corroboration" section citing the briefing's Row 12 as the first primary-source practitioner document to articulate the Wyndham-to-Mythos "reasonable defensive effort" shift as an active governance and liability risk.
+- Updated `SOURCES.md` — registered `[MYTHOS-BRIEFING]` citation key with both the GlobeNewswire press release and the PDF as primary sources.
+- Updated `README.md` — added the new event to the events list.
+
+---
+
+
 
 - Added `analysis/disclosure-and-deployment.md` — framing piece on the simultaneity of the April 7 Glasswing announcement: capability disclosure, behavioral evidence, and ~50-organization enterprise deployment arrived in the same document. Argues that the governance review sequence assumed by ISO 42001, NIST AI RMF, and SOC 2 did not occur because disclosure and deployment were the same event.
 - Updated README analysis section to include the new piece.

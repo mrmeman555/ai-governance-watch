@@ -123,6 +123,7 @@ For full details, see [System Card Summary — Alignment Assessment](system-card
 - [Claw Code Rewrite](events/2026-03--claw-code-rewrite.md) — a clean-room rebuild in Rust/Python reaches 50K stars in 2 hours [CLAW-CODE]
 - [Managed Agents Beta](events/2026-04--managed-agents-beta.md) — Anthropic launches the harness as a managed service [MANAGED-AGENTS]
 - [Project Glasswing](events/2026-04--project-glasswing.md) — Anthropic deploys Claude Mythos to ~50 organizations; system card documents thousands of zero-days [GLASSWING]
+- [SANS/CSA/OWASP Mythos-Ready Briefing](events/2026-04--sans-csa-owasp-mythos-briefing.md) — 60+ practitioners including former CISA Director and National Cyber Director release emergency strategy briefing in direct response to Glasswing; explicitly states that Mythos shifts the "reasonable defensive effort" standard [MYTHOS-BRIEFING]
 
 ### Analysis
 

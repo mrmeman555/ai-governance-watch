@@ -155,6 +155,15 @@ Anthropic.
 https://platform.claude.com/docs/en/api/beta/sessions
 *Cited in: events/2026-04--managed-agents-beta.md*
 
+**[MYTHOS-BRIEFING]** "The AI Vulnerability Storm: Building a Mythos-Ready Security Program."
+SANS Institute, Cloud Security Alliance, [un]prompted, and OWASP GenAI Security Project. April 14, 2026.
+Press release: https://www.globenewswire.com/news-release/2026/04/14/3273499/0/en/SANS-Institute-Cloud-Security-Alliance-un-prompted-and-OWASP-GenAI-Security-Project-Release-Emergency-Strategy-Briefing-as-AI-Driven-Vulnerability-Discovery-Compresses-Exploit-Time.html
+PDF (primary artifact): https://labs.cloudsecurityalliance.org/mythos-ciso/
+60+ named contributors; reviewed by 250+ CISOs. Notable contributors: Jen Easterly (former CISA Director), Chris Inglis (former National Cyber Director), Phil Venables (Google CISO), Bruce Schneier, Heather Adkins, Rob Joyce, Sounil Yu.
+Key contents: 13-item risk register mapped to OWASP LLM Top 10 2025, OWASP Agentic Top 10 2026, MITRE ATLAS, NIST CSF 2.0; 11 priority actions with start dates; 10 CISO diagnostic questions; board briefing section.
+Row 12 (Regulatory Exposure): explicitly states that when AI can find vulnerabilities at accessible cost, the standard for "reasonable defensive effort" shifts, and organizations that do not adapt face governance and liability exposure.
+*Cited in: events/2026-04--sans-csa-owasp-mythos-briefing.md, analysis/reasonable-security-baseline.md*
+
 **[GLASSWING]** Project Glasswing — Anthropic announcement.
 Anthropic, April 7, 2026.
 https://www.anthropic.com/glasswing
