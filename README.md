@@ -52,7 +52,7 @@ Three governance questions emerged from these events:
 
 1. **The harness gap.** Between January and April 2026, three independent codebases — OpenClaw [OPENCLAW], Claw Code [CLAW-CODE], and the leaked Claude Code source [CLAUDE-LEAK-TECHCRUNCH] — converged on the same agent harness architecture: tools, permission gates, memory, subagent orchestration, audit logging. [CLAUDE-LEAK-ANALYSIS] The major governance frameworks — ISO 42001 [ISO-42001], NIST AI RMF [NIST-AI-RMF], SOC 2 [SOC2-TSC] — do not address this orchestration layer. See [The Harness Governance Gap](analysis/harness-governance-gap.md).
 
-2. **The baseline shift.** In *FTC v. Wyndham* (3d Cir. 2015), the Third Circuit held that "reasonable security" under FTC Section 5 is benchmarked against available technology using a cost-benefit framework. [FTC-WYNDHAM] The Mythos Preview system card documents AI-driven exploit development at $50–$2,000 per exploit. [GLASSWING-CARD] See [The Reasonable Security Baseline Just Moved](analysis/reasonable-security-baseline.md).
+2. **The baseline shift.** In *FTC v. Wyndham* (3d Cir. 2015), the Third Circuit held that "reasonable security" under FTC Section 5 is benchmarked against available technology using a cost-benefit framework. [FTC-WYNDHAM] The Mythos Preview system card documents AI-driven exploit development at $50–$2,000 per exploit. [GLASSWING-CARD] On April 13, 2026, a 30-page practitioner briefing reviewed by 250+ CISOs and co-authored by the former CISA Director and former National Cyber Director stated explicitly: "When AI can find vulnerabilities at accessible cost, the standard for what constitutes reasonable defensive effort shifts, creating direct governance and liability exposure for organizations that do not adapt." [MYTHOS-BRIEFING] See [The Reasonable Security Baseline Just Moved](analysis/reasonable-security-baseline.md).
 
 3. **The capability threshold.** The Mythos Preview sandbox escape — where the model autonomously built a multi-step exploit and emailed a researcher without direction — is not harness behavior. A harness does not make strategic decisions. The governance question is what it means that the model itself crossed a reasoning threshold where the harness acts as a force multiplier for already-dangerous capability, not the source of it.
 
@@ -77,6 +77,8 @@ Three governance questions emerged from these events:
 **April 7** — Project Glasswing launched. Anthropic deployed Claude Mythos Preview to ~50 partner organizations (AWS, Apple, Google, Microsoft, CrowdStrike, Palo Alto Networks, JPMorganChase, NVIDIA, Broadcom, Linux Foundation) with $100M in usage credits and $4M+ in direct donations to open-source security organizations. Anthropic published the 244-page system card. [GLASSWING] [GLASSWING-CARD]
 
 **April 8** — Glasswing covered by NBC [GLASSWING-NBC], Fortune [GLASSWING-FORTUNE], CyberScoop [GLASSWING-CYBERSCOOP], TechCrunch [GLASSWING-TECHCRUNCH], Axios [GLASSWING-AXIOS]. CrowdStrike announced its role as a founding member of the Mythos program. [GLASSWING-CROWDSTRIKE] The Pentagon's FY2027 budget proposed $1.5T in defense spending (42% YoY increase) while cutting CISA by $707M. [FY2027-BUDGET] Former national security officials urged Congress to renew Section 702 of FISA. [FISA-702]
+
+**April 13** — SANS Institute, the Cloud Security Alliance, [un]prompted, and the OWASP GenAI Security Project published *"The AI Vulnerability Storm: Building a Mythos-Ready Security Program"* as a live draft — a 30-page emergency strategy briefing produced over a single weekend by 60+ contributors including former CISA Director Jen Easterly, former National Cyber Director Chris Inglis, and Google CISO Phil Venables, reviewed by 250+ CISOs. The formal press release followed April 14. The briefing explicitly states that Mythos shifts the standard for "reasonable defensive effort," creating governance and liability exposure for organizations that do not adapt. [MYTHOS-BRIEFING]
 
 ---
 
@@ -154,6 +156,14 @@ New events get added as they happen. The CHANGELOG tracks what changed and when.
 | Mythos Preview System Card — web (April 7, 2026) | [red.anthropic.com](https://red.anthropic.com/2026/mythos-preview/) |
 | Mythos Preview System Card — full 244-page PDF | [anthropic.com (PDF)](https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf) |
 | Innovaiden — Glasswing assessment baseline | [innovaiden.com](https://www.innovaiden.com/insights/project-glasswing-cybersecurity-assessment-baseline) |
+
+**Industry response:**
+
+| Resource | Link |
+|----------|------|
+| "The AI Vulnerability Storm: Building a Mythos-Ready Security Program" — PDF (SANS, CSA, OWASP, April 13, 2026) | [labs.cloudsecurityalliance.org](https://labs.cloudsecurityalliance.org/mythos-ciso/) |
+| SANS AI Cybersecurity Summit (April 20, 2026, free) | [sans.org](https://www.sans.org/cyber-security-training-events/ai-summit-2026) |
+| CSA Agentic AI Security Summit (April 29–30, 2026, free) | [cloudsecurityalliance.org](https://cloudsecurityalliance.org) |
 
 **Agent harness ecosystem:**
 
