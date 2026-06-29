@@ -1,0 +1,37 @@
+name: AI Governance Watch — weekly auto-update
+
+# Researches new AI-governance developments and opens a PR with draft updates.
+# Human review required: the action NEVER auto-merges — it opens a PR for you to review.
+on:
+  schedule:
+    - cron: '0 13 * * MON'   # Mondays ~13:00 UTC (weekly)
+  workflow_dispatch: {}        # manual "Run workflow" button (use this to test)
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Claude — research & draft tracker update
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Read `.github/prompts/update-tracker.md` and follow it EXACTLY.
+            It instructs you to research genuinely new AI-governance developments
+            since the last update, draft CONSERVATIVE event briefs from the
+            templates, register citation keys, and update README + CHANGELOG —
+            and to make NO changes if nothing genuinely new and primary-source-
+            verifiable is found. Do not modify anything under `.github/`.
+            A pull request will be opened for human review (nothing is auto-merged).
+          claude_args: |
+            --max-turns 30
+            --allowedTools "Read,Glob,Grep,Edit,Write,WebSearch,WebFetch"
