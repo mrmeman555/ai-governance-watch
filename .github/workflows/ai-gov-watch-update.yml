@@ -24,7 +24,7 @@ jobs:
       - name: Claude — research & draft tracker update
         uses: anthropics/claude-code-action@v1
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY_MYKEY }}
           prompt: |
             Read `.github/prompts/update-tracker.md` and follow it EXACTLY.
             It instructs you to research genuinely new AI-governance developments
